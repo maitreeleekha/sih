@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+    <title>Sign Up</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/signup.css" />
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqIIDbnReNsYsJz9T63RnbJyYMJ8CFZPY"
+    type="text/javascript"></script>
+    <script src="assets/js/registerForm.js"></script>
+
+</head>
+
+<body class="subpage">
+
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '318819028525491',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.11'
+            });
+
+            FB.AppEvents.logPageView();
+
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="index.html">
+            <i class="fa fa-sign-language" aria-hidden="true"></i>
+        </a>
+        <a class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation" id="toggleButton">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <!--<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Profile
+				  </a>
+				  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<li><a  href="profileDashboard.html">Dashboard</a></li>
+					<li><a   href="registerationForm.html">Login</a></li>
+				  </ul>
+				</li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="profileDashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Signup</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <br>
+    <div class="container">
+        <h1>Sign Up!</h1>
+
+        <h4>Already have an account?
+            <a href="login.html">Log in</a>
+        </h4>
+    </div>
+
+    <div id="mainDiv" class="container">
+        <div id="registrationForm">
+            <form id="myForm" action="" method="POST" onSubmit="return false;">
+                <div class="form-row">
+                    <div class="form-group col-sm-12">
+                        <label for="inputName" class="col-xs-3">Name *</label>
+                        <input type="text" id="inputName" placeholder="Name" name="name" autocomplete="off">
+                        <div id="invalidNameDiv" class="invisible invalidDivText col-sm-6">
+                            Enter Name
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-sm-12">
+                        <label for="inputEmail">Email *</label>
+
+                        <input type="email" id="inputEmail" placeholder="Email" name="email" autocomplete="off">
+                        <div id="invalidEmailDiv" class="invisible invalidDivText col-sm-6">
+                            Enter Valid Email
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword">Password *</label>
+                        <input type="password" id="inputPassword" name="password" placeholder="Password" autocomplete="off">
+                        <div id="invalidPasswordDiv" class="invisible invalidDivText">
+                            Enter New Password
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPasswordCon" id="conPassLabel">Confirm Password *</label>
+                        <input type="password" id="inputPasswordCon" name="confirmPassword" placeholder="Confirm Password" autocomplete="off">
+                        <div id="invalidConfirmPassDiv" class="invisible invalidDivText">
+                            Confirm Password
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-sm-12">
+                        <label for="inputCity">City *</label>
+                        <input id="city" type="text" placeholder="City" id="inputCity" name="city" autocomplete="off">
+                        <div id="invalidCityDiv" class="invisible invalidDivText">
+                            Enter City
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputState">State *</label>
+                        <select id="inputState" name="state">
+                            <option>State</option>
+                            <option>Andaman and Nicobar Islands</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Arunachal Pradesh</option>
+                            <option>Assam</option>
+                            <option>Bihar</option>
+                            <option>Chattisgar</option>
+                            <option>New Delhi</option>
+                            <option>Goa</option>
+                            <option>Gujarat</option>
+                            <option>Haryana</option>
+                            <option>Himachal Pradesh</option>
+                            <option>Jammu and Kashmir</option>
+                            <option>Jharkhand</option>
+                            <option>Karnataka</option>
+                            <option>Kerala</option>
+                            <option>Lakshadweep</option>
+                            <option>Madhya Pradesh</option>
+                            <option>Manipur</option>
+                            <option>Meghalaya</option>
+                            <option>Mizoram</option>
+                            <option>Nagaland</option>
+                            <option>Odisha</option>
+                            <option>Punjab</option>
+                            <option>Rajasthan</option>
+                            <option>Sikkim</option>
+                            <option>Tamil Nadu</option>
+                            <option>Telangana</option>
+                            <option>Tripura</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Uttarakhand</option>
+                            <option>West Bengal</option>
+                        </select>
+                        <div id="invalidStateDiv" class="invisible invalidDivText">
+                            Choose State
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputZip">Zip *</label>
+                        <input type="text" placeholder="Zip" id="inputZip" name="zip" autocomplete="off">
+                        <div id="invalidZipDiv" class="invisible invalidDivText">
+                            Enter Valid Zip Code.
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <button id="submit" name="submit" type="submit">Sign in</button>
+            </form>
+
+        </div>
+        <div id="secondForm">
+            <br>
+            <br>
+            <span>
+                <h2>OR
+                    <br> Sign up with</h2>
+            </span>
+            <br>
+
+            <a id="facebook">
+
+                <div id="fbSignUp" class="fb-login-button" data-width="150" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false"
+                    data-auto-logout-link="false" data-use-continue-as="false" scope="public_profile,email"
+                    onlogin="checkSigninState();"></div>
+            </a>
+            <br>
+            <br>
+        </div>
+
+    </div>
+    <!-- Scripts -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

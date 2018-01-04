@@ -1,0 +1,217 @@
+#mainDiv{
+display:grid;
+grid-template-areas: "rf fg";
+grid-template-columns: 1fr 1fr;
+
+}
+
+
+#registrationForm{
+    grid-area: rf;
+   /* width:40%;
+    min-width:290px;
+    margin-left:10%;*/
+    border-right: grey dotted thin;
+    padding-right:10%;
+
+}
+
+#secondForm{
+    grid-area: fg;
+    text-align: center;
+    padding-left: 5px;
+}
+
+#secondForm a{
+width:80%;
+margin:0px auto;
+border-radius: 2px;
+}
+
+#facebook{
+    display:grid;
+   
+   /* grid-template-areas: "i c";*/
+    text-align: center;
+}
+
+
+/*#secondForm #facebook img{
+    width:30%;
+    height:100%;
+    position: relative;
+    margin-left: 0px;
+left:0;
+top: 0;
+}
+#secondForm #gmail img{
+    width:30%;
+    height:100%;
+}
+
+
+#facebook{
+background-color: rgb(50, 50, 240) !important;
+border: whitesmoke thick solid ;
+box-shadow: none !important;
+
+}*/
+
+.container h1
+{
+    color: black;
+    font-size:3em;
+   text-align: center;
+}
+
+.container h4{
+    color:black;
+    text-align: center;
+}
+body{
+    background-color: white;
+
+}
+form{
+    background-color: white;
+    padding: 2%;
+}
+label{
+    color: rgba(0, 128, 100, 0.473);
+}
+
+select option{
+    background-color: whitesmoke !important;
+}
+
+select option:hover, select option::selection{
+    background: red !important;
+}
+input,select,option{
+    background-color: transparent !important;
+    color:rgb(1, 24, 16) !important ;
+}
+
+
+input:hover,select:hover,option:hover{
+    background-color: #6cc08f1e !important ;
+}
+
+.is-invalid{
+    background-color: rgba(255, 192, 205, 0.404) !important;
+    color:rgb(255, 0, 64) !important;
+    border: thin solid rgb(255, 0, 64) !important;
+    box-shadow: none !important;
+}
+.is-invalid:hover{
+    border:1.5em;
+    background-color:  rgba(255, 192, 205, 0.404) !important;
+}
+
+.invalidDivText{
+    color: rgb(255, 0, 64) !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    font-size: 0.8em;
+    
+}
+.invisible{
+    display: none;
+}
+
+input.is-invalid::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: pink !important;
+  }
+
+  button:focus{
+      outline:0;
+  }
+
+  
+  @media screen and (max-width:800px){
+
+    #mainDiv{
+
+        width:75%;
+        min-width: 290px;
+        display:block;
+    }
+
+    #registrationForm{
+        border: transparent;
+        border-bottom: grey dotted thin;
+        padding-bottom: 6px;
+    }
+
+
+    
+  }
+/*form{
+    width:90% !important;
+    margin: 10% auto;
+    display: block;
+}
+
+form input,form select{
+    width: 70% !important;
+    background-color: white !important ;
+    float: right;
+    color:#182e21ea !important ;
+}
+
+form input:hover,form input:focus,select:hover,select:focus{
+    background-color: #6cc08f33 !important ;
+    width:70%;
+}
+label{
+   /* margin:0px 3% 0px 3%;
+    line-height: 2.5em;
+    width: 10%;
+}
+
+button{
+    width: 40%;
+    min-width: 200px;
+    display: block;
+    margin:0px auto;
+}
+
+@media screen and (min-width:768px){
+
+    form{
+        width:50% !important;
+        min-width: 250px;
+    }
+    
+    form input, form select{
+     width:80% !important;;
+}
+
+   form input:hover,form input:focus,select:hover,select:focus{
+    background-color: #6cc08f33 !important ;
+    width:80%;
+}
+}*/
+
+nav{
+    background-color: #4bae76f3;
+    color: white !important; 
+    padding-top: 0px !important;
+    margin-top: 0px;
+    font-size: 1.15em;
+    text-decoration: none !important;
+}
+
+nav a{
+    color: white !important; 
+    text-decoration: none !important;
+}
+a:hover{
+    color:#aae4c3f3 !important;
+}
+.subpage{
+    padding-top: 0px;
+}
+a{
+    color:#4bae76 !important;
+}

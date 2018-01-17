@@ -87,14 +87,14 @@ select option{
 select option:hover, select option::selection{
     background: red !important;
 }
-input,select,option{
+input,select,option,textarea{
     background-color: transparent !important;
     color:rgb(1, 24, 16) !important ;
 }
 
 
-input:hover,select:hover,option:hover{
-    background-color: #6cc08f1e !important ;
+input:hover,select:hover,option:hover,textarea:hover{
+    background-color: rgba(6, 1, 27, 0.103) !important ;
 }
 
 .is-invalid{
@@ -193,7 +193,7 @@ button{
 }
 }*/
 
-nav{
+/*nav{
     background-color: #4bae76f3;
     color: white !important; 
     padding-top: 0px !important;
@@ -208,10 +208,7 @@ nav a{
 }
 a:hover{
     color:#aae4c3f3 !important;
-}
+}*/
 .subpage{
     padding-top: 0px;
-}
-a{
-    color:#4bae76 !important;
 }

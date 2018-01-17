@@ -1,0 +1,95 @@
+/*@page {
+    size: 21cm 29.7cm;
+    margin: 30mm 45mm 30mm 45mm; /* change the margins as you want them to be. 
+}
+*/
+#cvMainDiv{
+    width: 90%;
+   
+    margin: 10px auto;
+    background-color: white;
+}
+
+
+body{
+    background-color: rgba(6, 1, 27, 0.589);
+}
+
+hr{
+    margin: 1em 0px;
+}
+
+#basicInfo{
+display: grid;
+height: 20%;
+grid-template-areas: "p i";
+grid-template-columns: 3fr 1fr;
+}
+div{
+    border: dotted grey thin;
+}
+#personalDetails{
+    grid-area: p;
+}
+#image{
+    grid-area: i;
+}
+
+#education{
+    height: 20%;
+}
+
+#objective{
+    height: 10%;
+}
+
+#skills{
+    height: 20%;
+}
+#experience,#certifications{
+    height: 20%;
+}
+
+
+body {
+    background: rgb(204,204,204); 
+  }
+  page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    margin-top: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  }
+  page[size="A4"] {  
+    width: 21cm;
+   /* height: 29.7cm; */
+   padding: 1%;
+  }
+  page[size="A4"][layout="portrait"] {
+    width: 29.7cm;
+    /*height: 21cm;  */
+    padding: 1%;
+  }
+  .break { page-break-after: auto; }
+  @media print {
+    body, page {
+      margin: 0 !important;
+      box-shadow: 0;
+    }
+    
+  }
+
+  @media screen and (max-width:768px){
+    page{
+        width: 95% !important;
+        margin: 15px auto;
+        padding: 2%;
+    }
+    #cvMainDiv{
+        width: 90%;
+        margin: 10px auto;
+        background-color: white;
+    }   
+}

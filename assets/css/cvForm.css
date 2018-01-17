@@ -1,0 +1,495 @@
+nav#mainNav{
+    background-color: rgb(6, 1, 27);
+    color: white !important; 
+    padding-top: 0px !important;
+    margin-top: 0px;
+    font-size: 1.1em;
+    text-decoration: none !important;
+}
+
+#formDiv{
+    float: right;
+    color:rgb(13, 9, 19) !important;
+
+}
+nav#mainNav a{
+    color: white !important; 
+    text-decoration: none !important;
+}
+nav#mainNav i{
+    font-size: 2em;
+}
+nav#mainNav a:hover{
+    color: rgb(181, 201, 28)!important;
+
+}
+
+.bootstrap-vertical-nav li:hover{
+   /* border:  3px rgb(13, 9, 19) !important;*/
+}
+body{
+    padding: 0px;
+    height: 100%;
+}
+a/*,.bootstrap-vertical-nav li*/{
+
+    color:white !important;
+    text-decoration: none !important;
+    margin: 1%;
+
+}
+
+button{
+    box-shadow: none;
+    border-radius: 0px;
+}
+#addSection{
+    margin: 20px;
+    float: left;
+    font-size: 1em;
+}
+
+.newEducationForm{
+    margin-top:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.226) !important;
+}
+.newFormAdded{
+    margin-top:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   /* border-top: dotted grey thin;*/
+   box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.226) !important;
+}
+.activeButton{
+    font-weight: bold;
+    border:solid 0.4em rgb(13, 9, 19) !important;
+   /* border-right:solid 2em rgba(221, 206, 141, 0.61);*/
+    color:rgb(13, 9, 19) !important;
+   /* box-shadow: 3px 3px 3px 3px rgb(138, 156, 35) !important;*/
+
+}
+.cvListItem {
+    font-size: 10pt;
+    text-align: center;
+}
+.cvListItem .fa{
+    font-size: 3.5em !important;
+}
+#leftright{
+    display: flex;
+    flex-direction: row;
+}
+#leftright button{
+    width: 5%;
+    min-width: 15px;
+    text-align: center;
+    margin: 0px auto;
+    box-shadow: none;
+    border-radius: 0px;
+    font-size: 0.8em;
+    
+}
+
+
+
+/*#cvNav{
+
+    width: 10%;
+    min-width: 100px;
+   /* background-color: #4bae7613;
+   box-shadow: 0px 1px 5px #4bae7677;
+    border-radius: 10px;
+    margin: 1%;
+    
+}*/
+#footer{
+    padding-bottom: 0px;
+}
+
+#formDiv form{
+    width: 75% ; 
+    margin: 0px auto ;
+}
+
+.container{
+    
+}
+.half{
+    width: 50%;
+    display: inline-block;
+}
+.half i{
+    font-size: 2em;
+    margin: 2px;
+}
+
+.stroke{
+    display: inline-block;
+    width: 10%;
+    margin: 0px;
+    margin-bottom: 3%;
+}
+
+
+
+
+
+.dropright button{
+    border:0px;
+    color: white !important;
+    box-shadow: none !important;
+    width: 100%;
+    font-size: 1em;
+    background-color: #4bae76d7;
+    border-radius: 5px;
+}
+
+.dropright .dropdown-menu{
+    font-size: 1em;
+}
+.bootstrap-vertical-nav{
+    margin-top: 0px !important;
+    background-color: rgb(181, 201, 28);;
+    box-shadow: 2px 2px 2px 2px rgba(13, 9, 19, 0.39);
+    
+   
+}
+.cvListItem{
+  /*  border-radius: 8px;*/
+   
+    border: 0px transparent;
+     color:rgb(13, 9, 19) !important;
+    /*box-shadow: 3px 3px 3px 3px rgba(136, 156, 35, 0.651);*/
+}
+
+#summaryForm{
+    width: 75% !important;
+    text-align: justify;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.226) !important;
+}
+
+#formDiv form{
+
+    display: block;
+    width: 70%;
+    margin:2% auto;
+}
+
+.form-row{
+    display: block;
+}
+
+textarea{
+    background-color: white !important;
+    resize: none;
+    color:rgb(2, 22, 22);
+    overflow: hidden
+}
+
+label{
+    font-size:10pt !important;
+}
+input,textarea {
+    border: solid 1.5px rgba(138, 156, 35, 0.568); 
+}
+
+.formName {
+    margin: 2%;
+    font-size: 1em;
+}
+.formName h1{
+    font-size: 2.4em;
+    text-align: left;
+    margin: 0px !important;
+}
+img{
+    width: 40%;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 5px auto;
+    margin-bottom: 1px;
+
+}
+
+/*#uploadIcon{
+    font-size: 5em !important;
+    color: rgb(172, 192, 42);
+   
+}*/
+#uploadImage{
+    width:50%;
+    border-radius: 0px;
+    margin: 1px;
+   /* background-color: rgba(11, 155, 107, 0.082) !important;*/
+   /* box-shadow: none !important;*/
+}
+figcaption{
+    margin: 2px auto;
+    padding: 6%;
+    text-align: justify;
+}
+
+#basicInfoFormDiv{
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.226) !important;
+    display:block;
+}
+
+#markDiv, #marksFormat, #maxCGP{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+#educationFormDiv{
+    width: 80%;
+    margin: 0px auto;
+}
+#educationForm{
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.226) !important;
+    margin-top:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#summaryForm textarea{
+    height: 200px;
+}
+#publicationsForm textarea ,#projectsForm textarea, #volunteeringForm textarea, {
+    height: 150px;
+}
+
+.newFormAdded textarea{
+    height: 150px !important;
+}
+textarea{
+    text-align: justify;
+}
+
+#experienceForm, .newFormAdded{
+    text-align: justify;
+}
+
+#skillsForm{
+    text-align: justify;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.226) !important;
+}
+
+#skillsForm textarea{
+    height: 200px;
+}
+
+form{
+    text-align: justify;
+}
+
+#toggleButton2{
+    color: rgb(6, 1, 27) !important;
+}
+
+.bootstrap-vertical-nav{
+    margin: 0px;
+}
+.mainBody>.bootstrap-vertical-nav{
+    display:block;
+     margin: 0px;
+ }
+.mainBody>.w3-sidebar{
+   display: none ;
+}
+.mainBody>.w3-sidebar>.bootstrap-vertical-nav{
+    display: none;
+ }
+.openNavIcon{
+    display:none;
+}
+#imageUpload
+{
+    display: none;
+}
+.openNavIcon i{
+    color:rgb(6, 1, 27);
+    font-size: 3em;
+    background-color: rgb(181, 201, 28);
+}
+
+.fa-window-close-o{
+    color:rgb(6, 1, 27);
+    background-color: rgb(181, 201, 28);
+}
+
+@media screen and (min-width:300px ) and (max-width:980px){
+   
+   .mainBody>.bootstrap-vertical-nav{
+       display:none;
+        margin: 0px;
+    }
+
+    .mainBody>.w3-sidebar>.bootstrap-vertical-nav{
+        display: block;
+     }
+  .mainBody>.w3-sidebar{
+      display: block;
+      position: relative;
+      background-color: rgb(181, 201, 28);
+      top: 0px;
+      left: 0px;
+  }
+  .openNavIcon{
+      display: block;
+      width: 20%;
+  }.fa-window-close-o{
+    color:rgb(6, 1, 27);
+}
+
+}
+@media (min-width:300px){
+    #summaryForm,#skillsForm, #certificatesForm ,#publicationsForm ,#projectsForm ,#volunteeringForm,#langForm,
+    #recommendationForm,#experienceForm
+    
+    {
+        box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.226) !important;
+        width: 90% !important;
+    }
+    .newFormAdded{
+        width: 90% !important;
+    }
+    #collegeForm,#schoolForm{
+        width: 90% !important;
+    }
+
+}
+
+@media (min-width:600px){
+     
+    #certificatesForm,#skillsForm ,#langForm, #summaryForm ,#experienceForm,
+    #publicationsForm, #projectsForm, #volunteeringForm , #recommendationForm{
+        width: 75% !important;
+        box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.226) !important;
+     }
+     .newFormAdded{
+        width: 75% !important;
+        box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.226) !important;
+     }
+     #basicInfoForm {
+        width: 75% !important;
+     }
+   
+}
+
+
+
+@media (min-width: 981px) {
+    
+    .bootstrap-vertical-nav .collapse {
+        display: block;
+    }
+    .invisibleAtSm{
+        display: none;
+    }
+
+    .bootstrap-vertical-nav{
+        grid-area: n;
+      /*  padding-right: 5% !important;*/
+    }
+    #formDiv{
+        padding-top: 8%;
+        grid-area: f;
+        height: 100%;
+    }
+    
+
+    .mainBody{
+        display: grid;
+        grid-template-areas: "n f";
+        grid-template-columns: 0.5fr 5fr;
+        grid-template-rows: 1fr;
+    }
+    #basicInfoForm{
+        width: 100%;
+        margin: 5px;
+        grid-area: mf;
+    }
+
+    
+    .form-row{
+        display: flex;;
+    }
+   
+    #imageDiv{
+        grid-area: i;
+    }
+    img{
+        width: 75%;
+        max-width: 200px;
+        max-height: 200px;
+        margin-top:8%;
+        margin-left:5%;
+        margin-bottom: 1px;
+       /* border:solid thin #8dcca86b;*/
+    }
+    #markDiv, #marksFormat, #maxCGP{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    #uploadImage{
+        width:78%;
+       /* border-radius: 0px;*/
+        margin: 1px;
+       /* background-color: rgba(11, 155, 107, 0.082) !important;*/
+        /*box-shadow: none !important;*/
+    }
+    figcaption{
+        width: 78%;
+        
+        text-align: justify;
+    }
+
+    #basicInfoFormDiv{
+        display:grid;
+        grid-template-areas: "mf i";
+        grid-template-columns: 1fr 0.75fr;
+    }
+    body{
+        line-height: 1.75 !important;
+    }
+
+    #educationFormDiv{
+        width: 60%;
+        margin: 0px auto;
+    }
+
+    #summaryForm{
+        width: 60% !important;
+    }
+    #publicationsForm, #projectsForm, #volunteeringForm,#langForm , #recommendationForm, #certificatesForm , #experienceForm,.newFormAdded{
+        width: 60% !important;
+        margin: 0px auto;
+        box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.226) !important;
+    }
+    
+}
+
+@media screen and (min-width:1400px){
+
+    body{
+        line-height: 2 !important;
+    }
+}
+  
+ .dragging{
+    
+     background-color: rgba(6, 1, 27, 0.103);
+ }
+ 
+ #moveSectionButton,#deleteSectionButton{
+     margin-bottom:5% !important;
+ }
+
+ #school_collegeNav a{
+color: rgb(6, 1, 27) !important; 
+ }
+
+ #school_collegeNav .active{
+     color: rgb(181, 201, 28) !important; 
+ }

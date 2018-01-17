@@ -1,0 +1,710 @@
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+    <title>CV</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="assets/css/signup.css" />
+    <link rel="stylesheet" href="assets/css/cvForm.css" />
+    
+
+
+    <style type="text/css">
+        @media (min-width: 768px) {
+            .bootstrap-vertical-nav {
+                margin-top: 50px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <!-- Header -->
+    <nav class="navbar navbar-expand-md" id="mainNav">
+        <a class="navbar-brand" href="index.html">
+            <i class="fa fa-sign-language" aria-hidden="true"></i>
+        </a>
+        <a class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation" id="toggleButton">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+
+        <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="profileDashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Logout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Signup</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="mainBody">
+
+         <div class="bootstrap-vertical-nav">
+            <a class="navbar-toggler invisibleAtSm" data-toggle="collapse" data-target="#collapseExample" aria-controls="collapseExample"
+                aria-expanded="false" aria-label="Toggle navigation" id="toggleButton2" style="text-align:center">
+                <i class="fa fa-caret-square-o-down" aria-hidden="true"></i> Options
+            </a>
+
+            <div class="collapse" id="collapseExample">
+                <ul class="nav flex-column" id="exCollapsingNavbar3">
+                        <div class="dropdown-divider"></div>
+                    <li class="nav-item activeButton cvListItem" id="basicInfoFormLink">
+                            <i class="fa fa-user" aria-hidden="true"></i> <br>Basic Information
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li class="nav-item cvListItem" id="summaryFormLink">
+                            <i class="fa fa-sticky-note" aria-hidden="true"></i><br>  Summary
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li class="nav-item cvListItem" id="educationFormLink">
+                            <i class="fa fa-university" aria-hidden="true"></i><br> Education
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li class="nav-item cvListItem" id="experienceFormLink">
+                            <i class="fa fa-briefcase" aria-hidden="true"></i><br>  Experience
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li class="nav-item cvListItem" id="skillsFormLink">
+                            <i class="fa fa-anchor" aria-hidden="true"></i><br>  Skills
+                    </li>
+                    <div class="dropdown-divider"></div>
+                    <li class="nav-item cvListItem" id="certificatesFormLink">
+                            <i class="fa fa-certificate" aria-hidden="true"></i><br>  Certifications
+                    </li>
+                    <div class="dropdown-divider"></div>
+
+                    <li class="nav-item cvListItem"  id="publicationsFormLink">
+                            <i class="fa fa-file-text" aria-hidden="true"></i><br>  Publications
+                    </li>
+                    <div class="dropdown-divider"></div>
+
+                    <li class="nav-item cvListItem"  id="projectsFormLink">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i><br>  Projects
+                    </li>
+                    <div class="dropdown-divider" ></div>
+
+                    <li class="nav-item cvListItem"  id="volunteeringFormLink">
+                            <i class="fa fa-users" aria-hidden="true"></i><br>   Volunteering
+                    </li>
+                    <div class="dropdown-divider" ></div>
+
+                    <li class="nav-item cvListItem"  id="languagesFormLink">
+                            <i class="fa fa-language" aria-hidden="true"></i><br>   Languages
+                    </li>
+                    <div class="dropdown-divider"></div>
+
+                    <li class="nav-item cvListItem" id="recommendationFormLink">
+                            <i class="fa fa-thumbs-up" aria-hidden="true"></i><br>  Recommendations
+                    </li>
+                    <div class="dropdown-divider" style="background-color:green"></div>
+                    <li class="nav-item cvListItem"  style="background-color:green;padding:4% 0px;">
+                            <button id="done1" type="button"> <i class="fa fa-check-square" aria-hidden="true"></i><br>  DONE </button>
+                    </li>
+                    <div class="dropdown-divider" style="background-color:green"></div>
+
+                    <!--<div class="dropright">
+                        <button type="button" class="btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span></span> + Add Another Section</span>
+                        </button>-->
+                        <!--<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="sr-only">Toggle Dropright</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" id="addPublications">Publications</a>
+                            <a class="dropdown-item" id="addProjects">Projects</a>
+                            <a class="dropdown-item" id="addVolunteering">Volunteering</a>
+                            <a class="dropdown-item" id="addLanguages">Languages</a>
+                            <a class="dropdown-item" id="addReccomendations">Recommendations</a>
+
+                        </div>-->
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+                  <i class="fa fa-window-close-o" onclick="w3_close()" aria-hidden="true">&times;</i> 
+                  <div class="bootstrap-vertical-nav">
+                      <div id="collapseExample">
+                          <ul class="nav flex-column" id="exCollapsingNavbar3">
+                              <li class="nav-item activeButton cvListItem" id="basicInfoFormLink">
+                                      <i class="fa fa-user" aria-hidden="true"></i> <br>Basic Information
+                              </li>
+                              <div class="dropdown-divider"></div>
+                              <li class="nav-item cvListItem" id="summaryFormLink">
+                                      <i class="fa fa-sticky-note" aria-hidden="true"></i><br>  Summary
+                              </li>
+                              <div class="dropdown-divider"></div>
+                              <li class="nav-item cvListItem" id="educationFormLink">
+                                      <i class="fa fa-university" aria-hidden="true"></i><br> Education
+                              </li>
+                              <div class="dropdown-divider"></div>
+                              <li class="nav-item cvListItem" id="experienceFormLink">
+                                      <i class="fa fa-briefcase" aria-hidden="true"></i><br>  Experience
+                              </li>
+                              <div class="dropdown-divider"></div>
+                              <li class="nav-item cvListItem" id="skillsFormLink">
+                                      <i class="fa fa-anchor" aria-hidden="true"></i><br>  Skills
+                              </li>
+                              <div class="dropdown-divider"></div>
+                              <li class="nav-item cvListItem" id="certificatesFormLink">
+                                      <i class="fa fa-certificate" aria-hidden="true"></i><br>  Certifications
+                              </li>
+                              <div class="dropdown-divider"></div>
+              
+                              <li class="nav-item cvListItem"  id="publicationsFormLink">
+                                      <i class="fa fa-file-text" aria-hidden="true"></i><br>  Publications
+                              </li>
+                              <div class="dropdown-divider"></div>
+              
+                              <li class="nav-item cvListItem"  id="projectsFormLink">
+                                      <i class="fa fa-lightbulb-o" aria-hidden="true"></i><br>  Projects
+                              </li>
+                              <div class="dropdown-divider" ></div>
+              
+                              <li class="nav-item cvListItem"  id="volunteeringFormLink">
+                                      <i class="fa fa-users" aria-hidden="true"></i><br>   Volunteering
+                              </li>
+                              <div class="dropdown-divider" ></div>
+              
+                              <li class="nav-item cvListItem"  id="languagesFormLink">
+                                      <i class="fa fa-language" aria-hidden="true"></i><br>   Languages
+                              </li>
+                              <div class="dropdown-divider"></div>
+              
+                              <li class="nav-item cvListItem" id="recommendationFormLink">
+                                      <i class="fa fa-thumbs-up" aria-hidden="true"></i><br>  Recommendations
+                              </li>
+                              <div class="dropdown-divider" style="background-color:green"></div>
+                              <li class="nav-item cvListItem" style="background-color:green;padding:4% 0px;">
+                                     <button id="done" type="button"> <i class="fa fa-check-square" aria-hidden="true"></i><br>  DONE </button>
+                              </li>
+                              <div class="dropdown-divider" style="background-color:green"></div>
+            
+              
+                          </ul>
+                      </div>
+                  </div>
+              
+              </div>
+               
+              <span class="openNavIcon">
+                          <i id="openNav" onclick="w3_open()" class="fa fa-caret-square-o-down" aria-hidden="true"></i>      
+              </span>
+        <div id="formDiv">
+            <div class="formName">
+                <h1 id="formHeading">Basic Information</h1>
+                
+                All fields are optional and you can choose to leave them blank. They won't show up in your resume.
+            </div>
+            <hr>
+            <div id="basicInfoFormDiv" class="conatiner cvForm" >
+                <form id="basicInfoForm" class="container" onsubmit="submitAllForms();" action="cv.html">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName">
+                    <label for="firstLast">Last Name</label>
+                    <input type="text" name="lastName" id="lastName">
+                    <label for="email">E-mail Id</label>
+                    <input type="email" name="email" id="email">
+                    <label for="phoneNumber">Phone</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address"></textarea>
+                </form>
+                <div style="text-align: center" id="imageDiv">
+
+                    <img id="imageProfile" src="images/profile-placeholder.png">
+                    <input id="imageUpload" type="file" name="profile_photo" required="" capture>
+                    <!--<i class="fa fa-user-circle" aria-hidden="true" id="uploadIcon"></i>-->
+                    <br>
+                    <button type="button" id="uploadImage">Upload a photo</button>
+                    <figcaption>Note: If you'd like to create a Photo CV, please upload your photo (maximum size - 500 KB). Ideally it
+                        should be 200 X 200 pixels.</figcaption>
+                </div>
+            </div>
+            <div id="educationFormDiv" style="display:none" class="conatiner cvForm">
+
+            <div id="educationForm" draggable="true">
+                   <button type="button" id="moveSectionButton"> <i class="fa fa-arrows" aria-hidden="true"></i> </button>
+                   <button type="button" id="deleteSectionButton"> <i class="fa fa-trash" aria-hidden="true"></i> </button>
+                <ul class="nav nav-tabs" id="school_collegeNav">
+                    <li id="college" class="nav-item">
+                        <a id="collegeLink" class="nav-link active" >College</a>
+                    </li>
+                    <li id="school" class="nav-item">
+                        <a id="schoolLink" class="nav-link" >School</a>
+                    </li>
+                </ul> <!--onclick="makeActive(this);"-->
+
+                <form id="collegeForm">
+
+                    <label for="collegeName">College</label>
+                    <input type="text" id="collegeName" name="collegeName" placeholder="College">
+
+                    <label for="university">University</label>
+                    <input type="text" id="university" name="university" placeholder="University">
+
+                    <label for="course">Course</label>
+                    <input type="text" id="course" name="course" placeholder="Course">
+
+                    <label for="specialization">Specialization</label>
+                    <input type="text" name="specialization" id="specialization" placeholder="Specialization">
+
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="batchStart">Batch Start</label>
+                            <select id="batchStart" name="batchStart">
+                                <option>year</option>
+                                <option>1978</option>
+                                <option>1979</option>
+                                <option>1980</option>
+                                <option>1981</option>
+                                <option>1982</option>
+                                <option>1983</option>
+                                <option>1984</option>
+                                <option>1985</option>
+                                <option>1986</option>
+                                <option>1987</option>
+                                <option>1988</option>
+                                <option>1989</option>
+                                <option>1990</option>
+                                <option>1991</option>
+                                <option>1992</option>
+                                <option>1993</option>
+                                <option>1994</option>
+                                <option>1995</option>
+                                <option>1996</option>
+                                <option>1997</option>
+                                <option>1998</option>
+                                <option>1999</option>
+                                <option>2000</option>
+                                <option>2001</option>
+                                <option>2002</option>
+                                <option>2003</option>
+                                <option>2004</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                                <option>2008</option>
+                                <option>2009</option>
+                                <option>2010</option>
+                                <option>2011</option>
+                                <option>2012</option>
+                                <option>2013</option>
+                                <option>2014</option>
+                                <option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="batchEnd">Batch End</label>
+                            <select id="batchEnd" name="batchEnd">
+                                <option>year</option>
+                                <option>1978</option>
+                                <option>1979</option>
+                                <option>1980</option>
+                                <option>1981</option>
+                                <option>1982</option>
+                                <option>1983</option>
+                                <option>1984</option>
+                                <option>1985</option>
+                                <option>1986</option>
+                                <option>1987</option>
+                                <option>1988</option>
+                                <option>1989</option>
+                                <option>1990</option>
+                                <option>1991</option>
+                                <option>1992</option>
+                                <option>1993</option>
+                                <option>1994</option>
+                                <option>1995</option>
+                                <option>1996</option>
+                                <option>1997</option>
+                                <option>1998</option>
+                                <option>1999</option>
+                                <option>2000</option>
+                                <option>2001</option>
+                                <option>2002</option>
+                                <option>2003</option>
+                                <option>2004</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                                <option>2008</option>
+                                <option>2009</option>
+                                <option>2010</option>
+                                <option>2011</option>
+                                <option>2012</option>
+                                <option>2013</option>
+                                <option>2014</option>
+                                <option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input type="checkbox" value="" id="isCurrentEducation">
+                            <label for="isCurrentEducation">is My Current Education</label>
+                        </div>
+                    </div>
+
+                    <label for="marksRow">Marks</label>
+                    <div class="form-row" id="marksRow">
+                        <div class="col">
+                            <select id="marksFormat" name="marksFormat">
+                                <option>Select Format</option>
+                                <option>Percent</option>
+                                <option>CGP</option>
+                            </select>
+                        </div>
+                        <div class="col" id="marksDiv">
+                            <input name="marks" type="text" id="marks" placeholder="marks">
+                        </div>
+                        <div class="col" id="maxCGP">
+                            <select name="maxCGP">
+                                <option>5</option>
+                                <option>10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="achievements">Academic Achievements</label>
+                        <textarea id="achievements" placeholder="optional" name="achievements"></textarea>
+                    </div>
+                </form>
+
+                <form id="schoolForm" style="display:none">
+                    <label for="schoolName">School</label>
+                    <input type="text" id="schoolName" id="schoolName" placeholder="School">
+
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="class">Class</label>
+                            <select id="class" name="class">
+                                <option>class</option>
+                                <option>10th</option>
+                                <option>12th</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="stream">Stream</label>
+                            <select id="stream" name="stream">
+                                <option>Stream</option>
+                                <option>Humanities</option>
+                                <option>Commerce</option>
+                                <option>Science</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="year">Year</label>
+                            <select id="year" name="year">
+                                    <option>year</option>
+                                    <option>1978</option>
+                                    <option>1979</option>
+                                    <option>1980</option>
+                                    <option>1981</option>
+                                    <option>1982</option>
+                                    <option>1983</option>
+                                    <option>1984</option>
+                                    <option>1985</option>
+                                    <option>1986</option>
+                                    <option>1987</option>
+                                    <option>1988</option>
+                                    <option>1989</option>
+                                    <option>1990</option>
+                                    <option>1991</option>
+                                    <option>1992</option>
+                                    <option>1993</option>
+                                    <option>1994</option>
+                                    <option>1995</option>
+                                    <option>1996</option>
+                                    <option>1997</option>
+                                    <option>1998</option>
+                                    <option>1999</option>
+                                    <option>2000</option>
+                                    <option>2001</option>
+                                    <option>2002</option>
+                                    <option>2003</option>
+                                    <option>2004</option>
+                                    <option>2005</option>
+                                    <option>2006</option>
+                                    <option>2007</option>
+                                    <option>2008</option>
+                                    <option>2009</option>
+                                    <option>2010</option>
+                                    <option>2011</option>
+                                    <option>2012</option>
+                                    <option>2013</option>
+                                    <option>2014</option>
+                                    <option>2015</option>
+                                    <option>2016</option>
+                                    <option>2017</option>
+                                    <option>2018</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="board">Board</label>
+                            <select id="board" name="board">
+                                <option>CBSE</option>
+                                <option>ICSE</option>
+                                <option>State Board</option>
+                            </select>
+                        </div>
+
+                        <div class="col">
+                        </div>
+                    </div>
+                    <label for="marksRow2">Marks</label>
+                    <div class="form-row" id="marksRow">
+                        <div class="col">
+                            <select id="marksFormat">
+                                    <option>Select Format</option>
+                                    <option>Percent</option>
+                                    <option>CGP</option>
+                            </select>
+                        </div>
+                        <div class="col" id="marks">
+                            <input type="text" id="marks" name="marks">
+                        </div>
+                        <div class="col" id="maxCGP">
+                                <select name="maxCGP">
+                                    <option>5</option>
+                                    <option>10</option>
+                                </select>
+                            </div>
+                    </div>
+
+                </form>
+            </div>
+            </div>
+
+            <div id="summaryFormDiv" style="display:none" class="conatiner cvForm">
+                <form id="summaryForm" class="container" onsubmit="submitAllForms();" action="cv.html">
+
+                    <label for="headline">Headline</label>
+                    <input type="text" name="headline" id="headline " placeholder="Web Designer, Sales Manager, Preschool Teacher, Administrative Assistant etc">
+                    <label for="professionalSummary">Professional Summary</label>
+                    <textarea name="professionalSummary" id="professionalSummary" placeholder="Add a short summary"></textarea> Add a short summary about yourself highlighting your specialities and what value you can add for any
+                    employer. e.g. Target-driven sales professional with a proven track record of growing revenue & profit.
+                    Over 10 years of progressive experience in direct sales, channel sales and business development in the
+                    highly competitive segments of the consumer electronics industry.
+                </form>
+
+            </div>
+
+            <div id="experienceFormDiv" style="display:none" class="conatiner cvForm">
+           
+    
+                <form id="experienceForm" class="container" draggable="true">
+                        <button type="button" id="moveSectionButton"> <i class="fa fa-arrows" aria-hidden="true"></i> </button>
+                        <button type="button" id="deleteSectionButton"> <i class="fa fa-trash" aria-hidden="true"></i> </button>
+                    <label for="company">Company</label>
+                    <input type="text" name="company" id="company" placeholder="eg: RD Digital Solutions, Inc">
+                    <label for="designation">Designation</label>
+                    <input type="text" name="designation" id="designation" placeholder="eg: Manager, Intern etc">
+                    <label for="date">Date</label>
+                    <input type="text" name="date" id="date" placeholder="eg: May 16'2017 to present etc">
+                    <label for="details">Details</label>
+                    <textarea name="details" id="details" placeholder="Write something about your experience"></textarea> List accomplishment statements e.g. Led team to do xx, which resulted in more efficiency/ time or money
+                    saved/ higher sales. If your job profile makes it difficult to come up with these hard numbers, then
+                    think about a challenge or situation you faced while employed. What action did you take to resolve it?
+                    What was the overall benefit for the employer? Those are your accomplishments/successes.
+                </form>
+            </div>
+            <div id="skillsFormDiv" style="display:none" class="conatiner cvForm">
+                <form id="skillsForm" onsubmit="submitAllForms();" action="cv.html">
+                    <label for="skills">Skills</label>
+                    <textarea name="skills" id="skills" placeholder="Your areas of expertise"></textarea> Tip: Add specific keywords as mentioned in the job opening. It would help in getting your resume past
+                    the initial screening done by Applicant Tracking Systems and keyword loving recruiters & hiring managers.
+                </form>
+            </div>
+
+            <div id="certificatesFormDiv" style="display:none" class="conatiner cvForm">
+                <form id="certificatesForm" draggable="true">
+                        <button type="button" id="moveSectionButton"> <i class="fa fa-arrows" aria-hidden="true"></i> </button>
+                        <button type="button" id="deleteSectionButton"> <i class="fa fa-trash" aria-hidden="true"></i> </button>
+                    <label for="nameOfCertificate">Title</label>
+                    <input type="text" id="nameOfCertificate" name="nameOfCertificate" placeholder="Name of Certification">
+                    <label for="certifyingAuthority">Certifying Authority</label>
+                    <input type="text" id="certifyingAuthority" name="certifyingAuthority" placeholder="Name of the organization issuing the certificate">
+                    <label for="dateOfCertification">Date</label>
+                    <input type="text" id="dateOfCertification" name="dateOfCertification" placeholder="eg:11 May 2016">
+                    <label for="certificateDetails">Details</label>
+                    <textarea name="certificateDetails" id="certificateDetails" placeholder="Write some details about the certificate"></textarea>
+                </form>
+                </form>
+
+            </div>
+
+            <div id="publicationsFormDiv" style="display:none" class="conatiner cvForm">
+                <form id="publicationsForm" draggable="true">
+                        <button type="button" id="moveSectionButton"> <i class="fa fa-arrows" aria-hidden="true"></i> </button>
+                        <button type="button" id="deleteSectionButton"> <i class="fa fa-trash" aria-hidden="true"></i> </button>
+                    <label for="publicationTitle">Title</label>
+                    <input type="text" name="publicationTitle" id="publicationTitle" placeholder="eg: Introduction to XYZ">
+                    <label for="publisher">Publisher</label>
+                    <input type="text" name="publisher" id="publisher" placeholder="Name of Publisher">
+                    <label for="publishDate">Date</label>
+                    <input type="text" name="publishDate" id="publishDate" placeholder="eg:2 Jan 2017">
+                    <label for="publicationDetails">Details</label>
+                    <textarea name="publicationDetails" id="publicationDetails" placeholder="Write some details about this publication"></textarea>
+                </form>
+            </div>
+
+            <div id="projectsFormDiv" style="display:none" class="conatiner cvForm" draggable="true">
+                    <form id="projectsForm">
+                            <button type="button" id="moveSectionButton"> <i class="fa fa-arrows" aria-hidden="true"></i> </button>
+                            <button type="button" id="deleteSectionButton"> <i class="fa fa-trash" aria-hidden="true"></i> </button>
+                        <label for="projectTitle">Title</label>
+                        <input type="text" name="projectTitle" id="projectTitle" placeholder="eg: Website for college club">
+                        <label for="projectURL">URL(if any)</label>
+                        <input type="text" name="projectURL" id="projectURL" placeholder="eg: https://www.example.com/my-project">
+                        <label for="projectDate">Date(s)</label>
+                        <input type="text" name="projectDate" id="projectDate" placeholder="eg: Jan 2017 to May 2017">
+                        <label for="projectDetails">Details</label>
+                        <textarea name="projectDetails" id="projectDetails" placeholder="Write some details about this project"></textarea>
+                    </form>
+                </div>
+    
+
+
+            <div id="volunteeringFormDiv" class="conatiner cvForm" style="display:none">
+                <form id="volunteeringForm" draggable="true">
+                        <button type="button" id="moveSectionButton"> <i class="fa fa-arrows" aria-hidden="true"></i> </button>
+                        <button type="button" id="deleteSectionButton"> <i class="fa fa-trash" aria-hidden="true"></i> </button>
+                    <label for="volunteeringOrganization">Organization</label>
+                    <input type="text" name="volunteeringOrganization" id="volunteeringOrganization" placeholder="eg: Animal Welfare League">
+                    <label for="volunteeringCause">Cause</label>
+                    <input type="text" name="volunteeringCause" id="volunteeringCause" placeholder="eg: Animal Welfare">
+                    <label for="volunteeringDates">Date(s)</label>
+                    <input type="text" name="volunteeringDates" id="volunteeringDates" placeholder="eg:2 Jan 2017 to 6 Jan 2017">
+                    <label for="volunteeringDetails">Details</label>
+                    <textarea name="volunteeringDetails" id="volunteeringDetails" placeholder="Write something about your role and responsibilites, and the skills you developed at this volunteering experience"></textarea>
+                </form>
+            </div>
+
+            <div id="langFormDiv" class="conatiner cvForm" style="display:none">
+                <form id="langForm" draggable="true">
+                        <button type="button" id="moveSectionButton"> <i class="fa fa-arrows" aria-hidden="true"></i> </button>
+                        <button type="button" id="deleteSectionButton"> <i class="fa fa-trash" aria-hidden="true"></i> </button>
+                    <label for="lang">Language</label>
+                    <input type="text" name="lang" id="lang" placeholder="eg: French">
+                    <label for="langProficiency">Proficiency</label>
+                    <input type="text" name="langProficiency" id="langProficiency" placeholder="eg: Full professional proficiency"> We suggest that you enter one of these values here: "Native or bilingual proficiency", "Full professional
+                    proficiency", "Professional working proficiency", "Limited working proficiency", "Elementary proficiency".
+                </form>
+            </div>
+
+            <div id="recommendationFormDiv" style="display:none" class="conatiner cvForm">
+                <form id="recommendationForm" draggable="true">
+                        <button type="button" id="moveSectionButton"> <i class="fa fa-arrows" aria-hidden="true"></i> </button>
+                        <button type="button" id="deleteSectionButton"> <i class="fa fa-trash" aria-hidden="true"></i> </button>
+                    <label for="recommenderName">Name</label>
+                    <input type="text" name="recommenderName" id="recommenderName" placeholder="Name of the recommender">
+                    <label for="recommenderDesignation">Designation</label>
+                    <input type="text" name="recommenderDesignation" id="recommenderDesignation" placeholder="Designation of recommender">
+                    <label for="recommendationDates">Date(s)</label>
+                    <input type="text" name="recommendationDates" id="recommendationDates" placeholder="eg: Jan 2017">
+                    <label for="recommendationDetails">Details</label>
+                    <textarea name="recommendationDetails" id="recommendationDetails" placeholder="Write some details about this recommendation"></textarea>
+                </form>
+            </div>
+            <button type="button" id="addSection"><i class="fa fa-plus-square" aria-hidden="true"></i> Add</button>
+        </div>
+        
+    </div>
+
+    <br>
+
+    <div id="leftright" class="container" style="text-align:center">
+        
+           <button type="button" id="prev"> <i class="fa fa-chevron-left" aria-hidden="true"></i> </button>
+           <button type="button" id="next"> <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+    </div>
+   
+    <br>
+    
+
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+    </footer>
+
+    <!-- Scripts -->
+
+    <script src="assets/js/profile.js"></script>
+    <script src="assets/js/cvDoneButton.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/cvForm.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+     
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+        <script>
+                function w3_open() {
+                 // document.getElementById("main").style.marginLeft = "25%";
+                  document.getElementById("mySidebar").style.width = "25%";
+                  document.getElementById("mySidebar").style.display = "block";
+                  document.getElementById("openNav").style.display = 'none';
+                }
+                function w3_close() {
+                  //document.getElementById("main").style.marginLeft = "0%";
+                  document.getElementById("mySidebar").style.display = "none";
+                  document.getElementById("openNav").style.display = "inline-block";
+                }
+                </script>
+</body>
+
+</html>

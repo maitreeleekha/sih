@@ -19,8 +19,8 @@ a:hover{
     min-width:290px;
     background-color:whitesmoke;
     display: grid;
-    grid-template-areas: "ph ep" "ph ps" "e e" "t t";
-    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "ph " " ps" "e " "t";
+    grid-template-columns: 1fr;
     grid-template-rows: max-content max-content max-content max-content;
  
 }
@@ -100,7 +100,7 @@ i section{
    
 }
 #picture img{
-    width: 90% !important;
+    width: 50% !important;
     margin: 20% auto;
     display:block;
    
@@ -291,8 +291,8 @@ textarea{
     background-color: white !important;
     resize: none;
     color:rgb(2, 22, 22);
-  
 }
+
 label{
     font-size:10pt !important;
 }

@@ -12,12 +12,41 @@ nav{
     text-decoration: none !important;
 }
 .nav-link:hover, .dropdown-item:hover{
-    color:#12291c;
+    color:rgb(181, 201, 28) !important;
 }
+.dropdown-menu{
+    background-color: rgba(184, 201, 28, 0.568);
+}
+
+.dropdown-menu a{
+    text-decoration: none !important;
+    color: rgb(6, 1, 27) !important;
+}
+.dropdown-menu a:hover{
+    color:rgb(181, 201, 28) !important ;
+}
+
 @media screen and (max-width:767px){
     #about{
         margin-top: 200px;
     }
+    .dropdown-menu{
+        background-color: transparent !important;
+    }
+
+    .dropdowan-menu .dropdown-divider{
+        display: none;
+    }
+
+    a.menuitem{
+        text-decoration: none !important;
+        color:white !important;
+
+    }
+    a.menuitem:hover{
+        color:rgb(181, 201, 28) !important;
+    }
+
 }
 @media screen and (max-width:800px){
     #about{
@@ -51,7 +80,7 @@ nav{
 
 @media screen and (max-width:767px){
     #navbarSupportedContent{
-        background-color: #4bae7667;
+        background-color: rgba(6, 1, 27, 0.589);
     }
 
     #banner{

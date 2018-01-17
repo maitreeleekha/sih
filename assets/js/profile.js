@@ -84,7 +84,7 @@ $('#cancel').click(cancelProfileChanges);
 $('#done').click(doneChanges);
 $('#cancelEducation').click(cancelAddEducation);
 $('#saveEducation').click(saveEducation);
-document.querySelector('#marksFormat').addEventListener('change',setMarksFormat);
+//document.getElementById('#educationForm').querySelector('#marksFormat').addEventListener('change',setMarksFormat);
 }
 
 function saveEducation(){
@@ -229,22 +229,7 @@ return ans;
 
 
 
-function setMarksFormat(){
-var form=document.querySelector('#collegeForm');
-if(form.marksFormat.value==='Percent')
-{
-    window.alert('% selected');
-    form.marks.value='';
-    document.querySelector('#maxCGP').style.display='none';
-    
-}
 
-else if(form.marksFormat.value==='CGP')
-    {window.alert('cgpa selected');
-    form.marks.value='';
-    document.querySelector('#maxCGP').style.display='block';
-}
-}
 
 
 
@@ -486,27 +471,3 @@ function fillUserDetails(){
 }
 
 
-function makeActive(ele){
-var id= ele.id;
-var sLink = document.getElementById('schoolLink');
-var cLink = document.getElementById('collegeLink');
-sLink.classList.remove('active');
-cLink.classList.remove('active');
-var link = document.getElementById(id);
-link.classList.add('active');
-
-if(sLink.classList.contains('active')){
-    document.querySelector('#schoolForm').style.display='block';
-    document.querySelector('#collegeForm').style.display='none';
-    
-
-}
-else{
-   
-   document.querySelector('#schoolForm').style.display='none';
-   document.querySelector('#collegeForm').style.display='block';
-}
-
-
-
-}

@@ -25,37 +25,45 @@
 			border: none;
 			cursor: pointer;
 		}
-		
-		.dropbtn:hover, .dropbtn:focus {
+
+		.dropbtn:hover,
+		.dropbtn:focus {
 			background-color: #3e8e41;
 		}
-		
+
 		.dropdown {
 			position: relative;
 			display: inline-block;
 		}
-		
+
 		.dropdown-content {
 			display: none;
 			position: absolute;
 			background-color: #f9f9f9;
 			min-width: 160px;
 			overflow: auto;
-			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 			z-index: 1;
 		}
-		
+
 		.dropdown-content a {
 			color: black;
 			padding: 12px 16px;
 			text-decoration: none;
 			display: block;
 		}
-		
-		.dropdown a:hover {background-color: #f1f1f1}
-		
-		.show {display:block;}
-		</style>
+
+		.dropdown-menu{
+			border:0px !important;
+		}
+		.dropdown a:hover {
+		/*	background-color: #f1f1f1*/
+		}
+
+		.show {
+			display: block;
+		}
+	</style>
 </head>
 
 <body>
@@ -107,10 +115,28 @@
 						<span class="sr-only">(current)</span>
 					</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Features</a>
-				</li>
-				<li class="nav-item">
+				<div class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+							<span>Features</span>
+						</a>
+						<div class="dropdown-menu" role="menu">
+							<a class="dropdown-item" href="cvForm.html">CV Generator</a>
+							<a class="dropdown-item" href="#">Psychometric Test</a>
+					        <a class="dropdown-item" id="chatRoomLink">Chat Room</a>
+						</div>
+					</div>
+					<div class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+							<span>User</span>
+						</a>
+						<div class="dropdown-menu" role="menu">
+							<a class="dropdown-item"  id="dashboard">Dashboard</a>
+							<a class="dropdown-item" href="login.html" id="login">Login</a>
+							<a class="dropdown-item" href="signup.html">Sign Up</a>
+							
+						</div>
+					</div>
+			<!--	<li class="nav-item">
 					<a class="nav-link" id="dashboard" href=''>Dashboard</a>
 				</li>
 				<li class="nav-item">
@@ -119,8 +145,9 @@
 				<li class="nav-item">
 					<a class="nav-link" href="signup.html">Signup</a>
 				</li>
+			-->
 
-			<!--	<li class="dropdown nav-item">
+				<!--	<li class="dropdown nav-item">
 					<a class="dropdown-toggle nav-link" id="menu1" data-toggle="dropdown">
 						<i class="fa fa-user" aria-hidden="true"></i>
 						<span class="caret"></span>
@@ -142,7 +169,7 @@
 					</ul>
 				</li>-->
 
-				<li>
+				<!--<li>
 					<div class="dropdown">
 						<a onclick="myFunction()" class="dropbtn">Dropdown</button>
 						  <div id="myDropdown" class="dropdown-content">
@@ -151,7 +178,24 @@
 							<a href="signup.html">Contact</a>
 						  </div>
 						</div>
-				</li>
+				</li>-->
+				
+				<!--SAMPLE DROPDOWN-->
+				
+				<!--
+					<div class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+						<span>Menu</span>
+					</a>
+					<div class="dropdown-menu" role="menu">
+						<a class="dropdown-item" href="#">Item One</a>
+						<a class="dropdown-item" href="#">Item Two</a>
+						<a class="dropdown-item" href="#">Item Three</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Item Four</a>
+					</div>
+				</div>
+			    -->
 
 			</ul>
 
@@ -369,22 +413,22 @@
 		function myFunction() {
 			document.getElementById("myDropdown").classList.toggle("show");
 		}
-		
+
 		// Close the dropdown if the user clicks outside of it
-		window.onclick = function(event) {
-		  if (!event.target.matches('.dropbtn')) {
-		
-			var dropdowns = document.getElementsByClassName("dropdown-content");
-			var i;
-			for (i = 0; i < dropdowns.length; i++) {
-			  var openDropdown = dropdowns[i];
-			  if (openDropdown.classList.contains('show')) {
-				openDropdown.classList.remove('show');
-			  }
+		window.onclick = function (event) {
+			if (!event.target.matches('.dropbtn')) {
+
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+					}
+				}
 			}
-		  }
 		}
-		</script>
+	</script>
 
 
 	<script src="assets/js/jquery.min.js"></script>

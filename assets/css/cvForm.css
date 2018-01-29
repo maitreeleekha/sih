@@ -380,6 +380,10 @@ form{
 
 
 @media (min-width: 981px) {
+
+    .mainBody>.w3-sidebar{
+        display: none !important ;
+     }
     
     .bootstrap-vertical-nav .collapse {
         display: block;

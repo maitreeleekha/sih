@@ -212,3 +212,7 @@ a:hover{
 .subpage{
     padding-top: 0px;
 }
+
+.dropdown-menu{
+    background-color: rgb(6, 1, 27) !important;
+}

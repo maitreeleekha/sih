@@ -215,7 +215,7 @@ function init() {
 
                                 if (userArray[i].email == loginForm.email.value && userArray[i].password == loginForm.password.value) {
                                     window.alert('user found!');
-                                    location.assign("index.html?name=" + userArray[i].name + "&city=" + userArray[i].city + "&state=" + userArray[i].state + "&email=" + userArray[i].email);
+                                    location.assign("index.html?name=" + userArray[i].name + "&city=" + userArray[i].city + "&state=" + userArray[i].state + "&email=" + userArray[i].email+"&username="+userArray[i].username);
                                     console.log("index.html?name=" + userArray[i].name + "&city=" + userArray[i].city);
                                     flag = true;
                                     var divText = document.querySelector('#invalidLogin');
@@ -239,6 +239,7 @@ function init() {
 
                         var myForm = document.querySelector('#myForm');
                         var name = document.querySelector('#inputName');
+                        var username=document.querySelector('#inputUsername');
                         var email = document.querySelector('#inputEmail');
                         var zip = document.querySelector('#inputZip');
                         var password = document.querySelector('#inputPassword');
@@ -262,6 +263,22 @@ function init() {
                             divText.classList.add('invisible');
 
                         }
+
+                        if (myForm.username.value == '') {
+                            console.log('cannot submit username');
+                            username.classList.add('is-invalid');
+                            var divText = document.querySelector('#invalidUsernameDiv');
+                            divText.classList.remove('invisible');
+                            ans = false;
+                        }
+                        else {
+                            username.classList.remove('is-invalid');
+                            var divText = document.querySelector('#invalidUsernameDiv');
+                            divText.classList.add('invisible');
+
+                        }
+
+
                         if (myForm.email.value == '') {
                             console.log('cannot submit email');
                             email.classList.add('is-invalid');
@@ -365,6 +382,7 @@ function init() {
                             submit.classList.remove('is-invalid');
                             var userObject = {
                                 name: name.value,
+                                username:username.value,
                                 email: email.value,
                                 password: password.value,
                                 zip: zip.value,
@@ -376,6 +394,7 @@ function init() {
                             window.alert(userArray.length);
                             //window.open("index.html", "_self");
                             myForm.name.value = '';
+                            myForm.username.value = '';
                             myForm.email.value = '';
                             myForm.password.value = '';
                             myForm.confirmPassword.value = '';

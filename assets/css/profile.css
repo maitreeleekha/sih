@@ -1,34 +1,53 @@
 
-
-
-.fa{
+body{
+    color:rgb(6, 1, 27)
+}
+.container i,i>section{
+    font-size: 0.75em !important;
+}
+.container .fa{
 margin: 2px;
+color:rgb(6, 1, 27)!important;
 }
 
-a{
+/*a{
     color:rgb(166, 231, 195) !important;
 }
 a:hover{
     color: white !important;
-}
-.dropdown-item:hover{
-    color:rgb(9, 31, 31) !important;
+}*/
+
+body{
+    background-color:whitesmoke;
 }
 .container{
     width:75%;
     min-width:290px;
     background-color:whitesmoke;
     display: grid;
-    grid-template-areas: "ph " " ps" "e " "t";
+    grid-template-areas: "ph " "ep" "d" "a" "e " "s" "we" "pro" "ea" "pi";
+  /* grid-template-areas:"ph" "c";*/
     grid-template-columns: 1fr;
-    grid-template-rows: max-content max-content max-content max-content;
+    grid-template-rows: max-content max-content max-content max-content max-content max-content max-content;
  
+}
+
+#personalInfo{
+    grid-area: pi;
+    min-height:50px;
+    font-size: 1.5em;
 }
 .container section{
     background-color: white;
     margin:5px;
     position :relative
     
+}
+#aboutMain{
+    grid-area: a;
+    min-height:50px;
+    font-size: 1.5em;
+
 }
 #profileHeaderForm{
     display:none;
@@ -37,7 +56,7 @@ a:hover{
     margin-left: 13%;
 }
 #nameHeading{
-    margin:3px !important;
+    margin:3px ;
     font-size: 1.5em;
 }
 
@@ -49,14 +68,13 @@ i section{
     font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
     float:right;
 }
-.container section .fa-pencil-square-o, .container section  .fa-plus-square-o{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    font-size: 2em;
-    color: teal;
+.container section .fa-pencil-square-o, .container section  .fa-plus-square-o,.rightAlign{
+   
+    color:rgb(6, 1, 27)!important;
+    text-shadow: 1px rgba(172, 192, 42, 0.747)!important;
     font-size: 20pt;  
-    display: none;  
+    display: none; 
+    text-align: right;
 }
 
 
@@ -66,16 +84,34 @@ i section{
     margin-top: 5px !important;
     
 }
+
+#extraCurr{
+    grid-area: ea;
+    min-height:50px;
+    font-size: 1.5em;
+}
 #education{
     grid-area: e;
     min-height:50px;
     font-size: 1.5em;
 }
-
-#talents_skills{
-    grid-area: t;
+#experience{
+    grid-area: we;
     min-height:50px;
+    font-size: 1.5em;
 }
+#skillsMain{
+    grid-area: s;
+    min-height:50px;
+    font-size: 1.5em;
+}
+#projects{
+    grid-area:pro;
+    min-height:50px;
+    font-size: 1.5em;
+}
+
+
 #profileHeader{
 
     grid-area: ph;
@@ -101,7 +137,7 @@ i section{
 }
 #picture img{
     width: 50% !important;
-    margin: 20% auto;
+    margin: 10% auto;
     display:block;
    
 }
@@ -131,6 +167,7 @@ i section{
 }
 
 #done{
+    grid-area: d;
     display:none;
 }
 
@@ -153,17 +190,17 @@ i section{
 display: flex;
 flex-direction: row;
 }
-#profile_blog button{
+/*#profile_blog button{
     
     width:50%;
     border-radius: 0px;
     margin: 1px;
     background-color: rgba(11, 155, 107, 0.082) !important;
     box-shadow: none !important;
-}
+}*/
 
 
-#editProfile{
+/*#editProfile{
 
     border-radius: 0px;
     margin: 1px;
@@ -174,7 +211,7 @@ flex-direction: row;
 #profile_blog button:hover, #editProfile:hover{
     background-color: rgba(11, 155, 107, 0.205) !important;
 }
-
+*/
 #proffHeading{
     font-size:0.4 em !important;
 }
@@ -184,16 +221,15 @@ flex-direction: row;
     border-radius: 0px !important;
     box-shadow: none !important;
 }
-button:hover{
+/*button:hover{
     background-color: rgba(11, 155, 107, 0.205) !important;
 }
 
 button{
     border-radius: 0px !important;
     box-shadow: none !important;
-    background-color: rgba(11, 155, 107, 0.082) !important;
     margin:5px !important;
-}
+}*/
 
 @media screen and (max-width:1000px){
     
@@ -272,9 +308,7 @@ button{
         }
     }
 
-.nav li{
-    font-size: 0.5em;
-}
+
  #schoolForm{
     display: none;
 }
@@ -296,7 +330,7 @@ textarea{
 label{
     font-size:10pt !important;
 }
-#collegeForm, #schoolForm{
+#collegeForm, #schoolForm,#experienceForm,#projectForm,#skillsForm,#extraCurrForm,#aboutForm,#personalInfoForm{
     width:75%;
     margin:0px auto;
     min-width:290px; 
@@ -308,6 +342,10 @@ label{
     display: none;
     width:90%;
     margin:0px auto;
+}
+
+.buttonGroup button{
+    margin: 20px;
 }
 
 #school_collegeNav{
@@ -323,16 +361,23 @@ label{
     display:none;
 }
 
-#edu>div{
-
+#edu>div,#exp>div,#pro>div,#skills>div,#activities>div,#aboutMe>div{
     color:black;
     font-size:0.7em;
     margin:2%;
     padding:2px;
     border-bottom: grey dotted thin;
+    word-wrap: break-word;
 }
 
-nav{
+#pinfo{
+    color:black;
+    font-size:0.7em;
+    margin:2%;
+    padding:2px;
+    word-wrap: break-word;
+}
+/*nav{
     background-color: #4bae76f3;
     color: white !important; 
     padding-top: 0px !important;
@@ -347,7 +392,31 @@ nav a{
 }
 a:hover{
     color:#aae4c3f3 !important;
-}
+}*/
 .subpage{
     padding-top: 0px;
+}
+
+@media screen and (min-width:981px){
+    #nameHeading{
+        margin:9% !important;
+    }
+
+    #cityState{
+        margin-left: 9%;
+    }
+}
+
+@media screen and (min-width:525px ) {
+    .container section .fa-pencil-square-o, .container section  .fa-plus-square-o,.rightAlign{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        color:rgb(6, 1, 27)!important;
+        text-shadow: 1px rgba(172, 192, 42, 0.747)!important;
+        font-size: 20pt;  
+        display: none; 
+        flex-wrap: wrap; 
+    }
+    
 }

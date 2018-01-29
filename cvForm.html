@@ -133,7 +133,7 @@
                     </li>
                     <div class="dropdown-divider" style="background-color:green"></div>
                     <li class="nav-item cvListItem"  style="background-color:green;padding:4% 0px;">
-                            <button id="done1" type="button"> <i class="fa fa-check-square" aria-hidden="true"></i><br>  DONE </button>
+                            <a id="done1"> <i class="fa fa-check-square" aria-hidden="true"></i><br>  DONE </a>
                     </li>
                     <div class="dropdown-divider" style="background-color:green"></div>
 
@@ -212,7 +212,7 @@
                               </li>
                               <div class="dropdown-divider" style="background-color:green"></div>
                               <li class="nav-item cvListItem" style="background-color:green;padding:4% 0px;">
-                                     <button id="done" type="button"> <i class="fa fa-check-square" aria-hidden="true"></i><br>  DONE </button>
+                                     <a id="done1"> <i class="fa fa-check-square" aria-hidden="true"></i><br>  DONE </a>
                               </li>
                               <div class="dropdown-divider" style="background-color:green"></div>
             
@@ -271,7 +271,7 @@
                     </li>
                 </ul> <!--onclick="makeActive(this);"-->
 
-                <form id="collegeForm">
+                <form id="collegeForm" onsubmit="submitAllForms();" action="cv.html">
 
                     <label for="collegeName">College</label>
                     <input type="text" id="collegeName" name="collegeName" placeholder="College">
@@ -413,9 +413,14 @@
                         <label for="achievements">Academic Achievements</label>
                         <textarea id="achievements" placeholder="optional" name="achievements"></textarea>
                     </div>
+
+                    <div class="form-row">
+                        <label for="details">Academic Details</label>
+                        <textarea id="details" placeholder="eg: subjects opted" name="details"></textarea>
+                    </div>
                 </form>
 
-                <form id="schoolForm" style="display:none">
+                <form id="schoolForm" style="display:none" onsubmit="submitAllForms();" action="cv.html">
                     <label for="schoolName">School</label>
                     <input type="text" id="schoolName" id="schoolName" placeholder="School">
 
@@ -437,8 +442,10 @@
                                 <option>Science</option>
                             </select>
                         </div>
+                        </div>
+                        <div class="form-row">
                         <div class="col">
-                            <label for="year">Year</label>
+                            <label for="year">Start Year</label>
                             <select id="year" name="year">
                                     <option>year</option>
                                     <option>1978</option>
@@ -484,8 +491,54 @@
                                     <option>2018</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="form-row">
+                        <div class="col">
+                                <label for="endyear">End Year</label>
+                                <select id="endyear" name="endyear">
+                                        <option>year</option>
+                                        <option>1978</option>
+                                        <option>1979</option>
+                                        <option>1980</option>
+                                        <option>1981</option>
+                                        <option>1982</option>
+                                        <option>1983</option>
+                                        <option>1984</option>
+                                        <option>1985</option>
+                                        <option>1986</option>
+                                        <option>1987</option>
+                                        <option>1988</option>
+                                        <option>1989</option>
+                                        <option>1990</option>
+                                        <option>1991</option>
+                                        <option>1992</option>
+                                        <option>1993</option>
+                                        <option>1994</option>
+                                        <option>1995</option>
+                                        <option>1996</option>
+                                        <option>1997</option>
+                                        <option>1998</option>
+                                        <option>1999</option>
+                                        <option>2000</option>
+                                        <option>2001</option>
+                                        <option>2002</option>
+                                        <option>2003</option>
+                                        <option>2004</option>
+                                        <option>2005</option>
+                                        <option>2006</option>
+                                        <option>2007</option>
+                                        <option>2008</option>
+                                        <option>2009</option>
+                                        <option>2010</option>
+                                        <option>2011</option>
+                                        <option>2012</option>
+                                        <option>2013</option>
+                                        <option>2014</option>
+                                        <option>2015</option>
+                                        <option>2016</option>
+                                        <option>2017</option>
+                                        <option>2018</option>
+                                </select>
+                            </div>
+        
                         <div class="col">
                             <label for="board">Board</label>
                             <select id="board" name="board">
@@ -493,9 +546,6 @@
                                 <option>ICSE</option>
                                 <option>State Board</option>
                             </select>
-                        </div>
-
-                        <div class="col">
                         </div>
                     </div>
                     <label for="marksRow2">Marks</label>
@@ -517,6 +567,11 @@
                                 </select>
                             </div>
                     </div>
+                    <div class="form-row" >
+                        <label for="details">Academic Details</label>
+                        <textarea id="details" name="details" placeholder="eg: subjects opted, etc"></textarea>
+                    </div>
+
 
                 </form>
             </div>
@@ -539,7 +594,7 @@
             <div id="experienceFormDiv" style="display:none" class="conatiner cvForm">
            
     
-                <form id="experienceForm" class="container" draggable="true">
+                <form id="experienceForm" class="container" draggable="true" onsubmit="submitAllForms();" action="cv.html">
                         <button type="button" id="moveSectionButton"> <i class="fa fa-arrows" aria-hidden="true"></i> </button>
                         <button type="button" id="deleteSectionButton"> <i class="fa fa-trash" aria-hidden="true"></i> </button>
                     <label for="company">Company</label>
@@ -564,7 +619,7 @@
             </div>
 
             <div id="certificatesFormDiv" style="display:none" class="conatiner cvForm">
-                <form id="certificatesForm" draggable="true">
+                <form id="certificatesForm" draggable="true" onsubmit="submitAllForms();" action="cv.html">
                         <button type="button" id="moveSectionButton"> <i class="fa fa-arrows" aria-hidden="true"></i> </button>
                         <button type="button" id="deleteSectionButton"> <i class="fa fa-trash" aria-hidden="true"></i> </button>
                     <label for="nameOfCertificate">Title</label>
@@ -581,7 +636,7 @@
             </div>
 
             <div id="publicationsFormDiv" style="display:none" class="conatiner cvForm">
-                <form id="publicationsForm" draggable="true">
+                <form id="publicationsForm" draggable="true" onsubmit="submitAllForms();" action="cv.html">
                         <button type="button" id="moveSectionButton"> <i class="fa fa-arrows" aria-hidden="true"></i> </button>
                         <button type="button" id="deleteSectionButton"> <i class="fa fa-trash" aria-hidden="true"></i> </button>
                     <label for="publicationTitle">Title</label>
@@ -596,7 +651,7 @@
             </div>
 
             <div id="projectsFormDiv" style="display:none" class="conatiner cvForm" draggable="true">
-                    <form id="projectsForm">
+                    <form id="projectsForm" draggable="true" onsubmit="submitAllForms();" action="cv.html">
                             <button type="button" id="moveSectionButton"> <i class="fa fa-arrows" aria-hidden="true"></i> </button>
                             <button type="button" id="deleteSectionButton"> <i class="fa fa-trash" aria-hidden="true"></i> </button>
                         <label for="projectTitle">Title</label>
@@ -628,7 +683,7 @@
             </div>
 
             <div id="langFormDiv" class="conatiner cvForm" style="display:none">
-                <form id="langForm" draggable="true">
+                <form id="langForm" draggable="true" onsubmit="submitAllForms();" action="cv.html">
                         <button type="button" id="moveSectionButton"> <i class="fa fa-arrows" aria-hidden="true"></i> </button>
                         <button type="button" id="deleteSectionButton"> <i class="fa fa-trash" aria-hidden="true"></i> </button>
                     <label for="lang">Language</label>
@@ -640,7 +695,7 @@
             </div>
 
             <div id="recommendationFormDiv" style="display:none" class="conatiner cvForm">
-                <form id="recommendationForm" draggable="true">
+                <form id="recommendationForm" draggable="true" onsubmit="submitAllForms();" action="cv.html">
                         <button type="button" id="moveSectionButton"> <i class="fa fa-arrows" aria-hidden="true"></i> </button>
                         <button type="button" id="deleteSectionButton"> <i class="fa fa-trash" aria-hidden="true"></i> </button>
                     <label for="recommenderName">Name</label>
@@ -695,7 +750,7 @@
         <script>
                 function w3_open() {
                  // document.getElementById("main").style.marginLeft = "25%";
-                  document.getElementById("mySidebar").style.width = "25%";
+                 // document.getElementById("mySidebar").style.width = "25%";
                   document.getElementById("mySidebar").style.display = "block";
                   document.getElementById("openNav").style.display = 'none';
                 }

@@ -3,6 +3,15 @@
     margin: 30mm 45mm 30mm 45mm; /* change the margins as you want them to be. 
 }
 */
+
+.heading{
+    font-weight: bold;
+    font-variant-caps: all-small-caps;
+    font-size: 1.75em;
+    text-decoration: underline;
+}
+
+
 #cvMainDiv{
     width: 90%;
    
@@ -13,12 +22,26 @@
 
 body{
     background-color: rgba(6, 1, 27, 0.589);
+    text-align: justify;
+    color:black;
+}
+.info{
+    margin-left: 5% !important;
 }
 
 hr{
     margin: 1em 0px;
 }
 
+#name{
+    margin-top: 5%;
+    font-size: 2em;
+    font-weight: bold;
+}
+.subHeading{
+    font-weight: bolder;
+
+}
 #basicInfo{
 display: grid;
 height: 20%;
@@ -26,13 +49,15 @@ grid-template-areas: "p i";
 grid-template-columns: 3fr 1fr;
 }
 div{
-    border: dotted grey thin;
+    /*border: dotted grey thin;*/
 }
 #personalDetails{
     grid-area: p;
 }
 #image{
     grid-area: i;
+    min-height: 200px;
+   
 }
 
 #education{
@@ -50,6 +75,13 @@ div{
     height: 20%;
 }
 
+strong{
+    font-weight: bold;
+   
+    font-size: 1.1em;
+    color: black;
+    text-decoration: underline;
+}
 
 body {
     background: rgb(204,204,204); 
@@ -92,4 +124,18 @@ body {
         margin: 10px auto;
         background-color: white;
     }   
+   
+}
+
+@media screen and (min-height:300px) and (max-width:550px)
+{
+    #image{
+        display: none;
+    }
+    #basicInfo{
+        display: grid;
+        height: 20%;
+        grid-template-areas: "p";
+        grid-template-columns: 1fr;
+        }
 }

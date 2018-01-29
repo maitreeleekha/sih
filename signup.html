@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/signup.css" />
-    <link rel="stylesheet" href="assets/css/login.css" />
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqIIDbnReNsYsJz9T63RnbJyYMJ8CFZPY"
     type="text/javascript"></script>
     <script src="assets/js/registerForm.js"></script>
+    <link rel="stylesheet" href="assets/css/signup.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+   
 
 </head>
 
@@ -45,49 +46,45 @@
         }(document, 'script', 'facebook-jssdk'));
     </script>
     <!-- Header -->
-    <nav class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="index.html">
-            <i class="fa fa-sign-language" aria-hidden="true"></i>
-        </a>
-        <a class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation" id="toggleButton">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </a>
-
-        <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <!--<li class="nav-item dropdown">
-				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Profile
-				  </a>
-				  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<li><a  href="profileDashboard.html">Dashboard</a></li>
-					<li><a   href="registerationForm.html">Login</a></li>
-				  </ul>
-				</li>-->
-                <li class="nav-item">
-                    <a class="nav-link" href="profileDashboard.html">Dashboard</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="signup.html">Signup</a>
-                </li>
-
-
-            </ul>
-        </div>
-    </nav>
-
+    <nav class="navbar navbar-expand-md" id="mainNav">
+            <a class="navbar-brand" href="index.html">
+                <i class="fa fa-sign-language" aria-hidden="true"></i>
+            </a>
+            <a class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation" id="toggleButton">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+        
+            <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                                <span>Features</span>
+                            </a>
+                            <div class="dropdown-menu" role="menu">
+                                <a class="dropdown-item" href="cvForm.html">CV Generator</a>
+                                <a class="dropdown-item" href="#">Psychometric Test</a>
+                                <a class="dropdown-item" href="#">Item Three</a>
+                                <a class="dropdown-item" href="#">Item Four</a>
+                            </div>
+                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Signup</a>
+                    </li>
+        
+        
+                </ul>
+            </div>
+        </nav>
+        
 
     <br>
     <div class="container">
@@ -119,6 +116,15 @@
                         <div id="invalidEmailDiv" class="invisible invalidDivText col-sm-6">
                             Enter Valid Email
                         </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Select Username</label>
+                        <input type="text" name="username" placeholder="eg: rahul0801, simran"  id="inputUsername">
+                        <div id="invalidUsernameDiv" class="invisible invalidDivText col-sm-6">
+                                Enter Valid Username
+                            </div>
                     </div>
                 </div>
                 <div class="form-row">

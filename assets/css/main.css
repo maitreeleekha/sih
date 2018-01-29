@@ -1976,7 +1976,7 @@
 		border-radius: 10px;
 		border: none;
 		border: solid 1.5px rgba(6, 1, 27, 0.397) !important;; 
-		color: #fff;
+		color: rgb(6, 1, 27);;
 		display: block;
 		outline: 0;
 		padding: 0 1em;
@@ -3293,7 +3293,10 @@
 		.navbar-brand:hover{
 			color:rgb(181, 201, 28)!important;
 		}
-
+		.dropdown-item:hover{
+			color:rgb(181, 201, 28)!important;
+			background-color: rgb(6, 1, 27) !important;
+		}
 		
 
 

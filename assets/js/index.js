@@ -41,7 +41,7 @@ if(check.ans==false){
     UserState=check.state[0]+'%20';
     for(var i=1;i<check.state.length;i++){
         
-                if(i==check.statae.length-1){
+                if(i==check.state.length-1){
                     UserState+=check.state[i];
                 }
                 else{
@@ -53,7 +53,7 @@ if(check.ans==false){
 
 
     var toggleButton= document.querySelector('#toggleButton');
-    if(UserName)
+    if(check.ans)
    {
        document.querySelector('#dashboard').style.display='block';
        $('#dashboard').attr('href', "profileDashboard.html"+"?UserName="+UserName+"&UserCity="+UserCity+"&UserState="+UserState+"&UserEmail="+UserEmail);
@@ -61,7 +61,7 @@ if(check.ans==false){
     } 
 
    else{
-    $('dashboard').attr('href','#');
+   // $('dashboard').attr('href','#');
     document.querySelector('#dashboard').style.display='none'
     
    }
@@ -103,6 +103,10 @@ if(check.ans==false){
 
     })
 
+    var chatRoomLink = document.querySelector('#chatRoomLink');
+    chatRoomLink.addEventListener('click',function(){
+location.assign('chatRooms.html'+'?'+check.userid);
+    });
 
 }
    
@@ -120,11 +124,16 @@ if(!userName){
 
 userName = userName.substr(1);
 var name = (/^name=/);
+var userid=(/^username=/);
 var city = (/^city=/);
 var state = (/^state/);
 var email = (/^email=/);
 var Name =userName.split('&').filter(function(item){
     return name.test(item);
+});
+
+var Userid=userName.split('&').filter(function(item){
+return userid.test(item);
 });
 
 var City =userName.split('&').filter(function(item){
@@ -151,13 +160,14 @@ Name = Name[0].replace("name=", "");
 City=City[0].replace("city=", "");
 State=State[0].replace("state=", "");
 Email=Email[0].replace("email=", "");
-
+Userid=Userid[0].replace("userid=","");
 //userName = atob(userName);
 //userName = JSON.parse(userName);
 var returnObj ={
     name: Name.split('%20'),//JSON.stringify(userName),
     city: City.split('%20'),
     state: State.split('%20'),
+    userid:Userid,
     email:Email,
     ans:  true
 };

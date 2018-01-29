@@ -1,0 +1,69 @@
+#chatRoomList{
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+body{
+    background-color: whitesmoke;
+}
+.chatRoom{
+    width: 20%;
+    height: 60px;
+    margin: 2.5%;
+    background-color: rgba(172, 192, 42, 0.582);
+    box-shadow: 4px 4px 8px gray;
+    border-radius: 10px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.chatRoom:hover{
+    background-color: rgb(172, 192, 42);
+    box-shadow: 4px 4px 16px gray;
+}
+@media screen and (max-width:767px){
+    #chatRoomList{
+        width: 80%;
+        margin: 5% auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .chatRoom{
+        width: 25% ;
+        margin: 5% auto ;
+    }
+}
+
+@media screen and (max-width:600px){
+    #chatRoomList{
+        width: 80%;
+        margin: 5% auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .chatRoom{
+        width: 30%;
+        height: 60px;
+        margin: 2.5% auto;
+    }
+}
+
+
+
+@media screen and (max-width:400px){
+    #chatRoomList{
+        width: 90%;
+        margin: 5% auto;
+        display: block;
+    }
+    .chatRoom{
+        width: 80%;
+        height: 60px;
+        margin: 5% auto;
+    }
+}

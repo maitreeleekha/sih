@@ -1,0 +1,351 @@
+body{
+    width: 100vw;
+}
+#aboutChat ul{
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+}
+
+.aboutLi{
+    width: 100%;
+    height: 60px;
+    margin: 0px !important;
+    line-height: 60px;
+}
+.aboutLi>h1{
+    font-size: 2em;
+    text-align: center;
+    line-height: 60px;
+    color: whitesmoke;
+}
+
+.navbar-toggler>i{
+margin-right: 10% !important;
+}
+.navbar-toggler{
+position: relative;
+left: 4%;
+}
+
+.navbar-toggler>.fa-sort-desc{
+    margin-left: 10%;
+    position: relative;
+    top:-5%;
+    right: 0px;
+}
+#aboutChat{
+    background-color: rgba(6, 1, 27, 0.795)!important;
+    height: 100vh ;
+    overflow-y:scroll
+}
+#chatArea{
+    height: 90vh;
+    background-color:whitesmoke;
+}
+ul#exCollapsingNavbar3{
+    background-color: rgba(6, 1, 27, 0.795)!important;
+    height: 100vh ;
+    width: 100vw;
+    overflow-y:scroll;
+}
+#mainChat{
+    width: 100vw !important;
+    height: 100vh  !important;
+    background-color:whitesmoke;
+    display: grid;
+    grid-template-areas: "a c";
+    grid-template-columns: 1.2fr 4.5fr;
+    }
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+#messageBox{
+    display: grid;
+    grid-template-areas: " m s";
+    grid-template-columns: 1fr max-content; 
+    width: 90%;
+    margin: 0px auto;
+    position: absolute;
+    bottom:80px;;
+    color:rgb(6, 1, 27);
+}
+
+#messageBox i{
+    font-size: 2.5em;
+    margin:0px 5px;
+    line-height: 60px;
+}
+#messageBox #send{
+    color:rgb(181, 201, 28);
+}
+
+.messageLeft{
+font-size: 1em;
+border-radius: 10px;
+clear: both;
+margin: 10px;
+
+max-width: 75%;
+
+padding: 10px;
+background-color: white;
+}
+.messageRight{
+    float :right;
+    clear: both;
+    font-size: 1em;
+    border-radius: 10px;
+    margin: 10px;
+    
+    max-width: 75%;
+    
+    padding: 10px;
+    background-color: white;
+    }
+    #mainChatArea{
+        height:75%;
+        width: 90%;
+        margin: 5px auto;
+        overflow-y: scroll;
+    }
+@media screen and (min-width:300px){
+    #aboutChat{
+       display: none;
+    }
+    .openNavIcon{
+        display: block;
+    }
+    #w3-sidebar{
+       /*grid-area: a;*/
+       height: 100vh;
+       width: 100vw;
+       overflow-y:scroll;
+    }
+    ul#exCollapsingNavbar3{
+        background-color: rgba(6, 1, 27, 0.795)!important;
+        height: 100vh;
+        width: 100vw;
+        overflow-y:scroll;
+    }
+    #mainChat{
+
+        display: block;
+        height: 100vh;
+        width: 100vw;
+      /*  grid-template-areas: "a c";
+        grid-template-columns: 0.8fr 1fr;*/
+    }
+        #chatArea{
+           /* grid-area: c;*/
+           height: 100vh;
+           max-width: 100vw;
+           position: relative;;
+           top: 0px !important;
+           left: 0px !important;
+           width: 100vw;
+        }
+        .aboutLi a{
+            font-size: 1.5em;
+            line-height: 60px;
+     }
+     .openNavIcon{
+         text-align: center;
+         background-color: rgba(6, 1, 27, 0.795)!important;
+         font-size: 2em;
+         height: 60px;
+         line-height: 60px;
+     }
+     #messageBox{
+        position: absolute;
+        bottom:10px;
+        margin: 5px ;
+        width: 100%;
+    }
+     
+}
+
+@media screen and (min-width:450px){
+    #aboutChat{
+        display: none;
+     }
+     .openNavIcon{
+         display: block;
+     }
+     #w3-sidebar{
+        /*grid-area: a;*/
+        
+        width: 60% ;
+     }
+     ul#exCollapsingNavbar3{
+         display: block;
+         background-color: rgba(6, 1, 27, 0.795)!important;
+         height: 100vh !important ;
+         width: 60%;
+         overflow: scroll;
+     }
+     #mainChat{
+ 
+         display: block;
+       /*  grid-template-areas: "a c";
+         grid-template-columns: 0.8fr 1fr;*/
+     }
+         #chatArea{
+            /* grid-area: c;*/
+            position: relative;;
+            top: 0px ;
+            left: 0px ;
+            width: 100%;
+         }
+         .aboutLi a{
+             font-size: 1.2em;
+             line-height: 80px;
+      }
+      .openNavIcon{
+          text-align: center;
+          background-color: rgba(6, 1, 27, 0.795)!important;
+          font-size: 2em;
+          height: 60px;
+          line-height: 60px;
+      }
+      #messageBox{
+        position: relative;
+        margin: 0px auto;
+        top: 75vh ;
+    }
+
+}
+@media screen and (min-width:768px){
+    #mainChat{
+        display: grid;
+        grid-template-areas: "a c";
+        grid-template-columns: 2.2fr 4fr;
+        }
+        
+        #aboutChat{
+            display: block;
+            grid-area: a;
+        }
+        #chatArea{
+            grid-area: c;
+        }
+        #w3-sidebar,.openNavIcon,ul#exCollapsingNavbar3{
+            display: none;
+        }
+        
+        .aboutLi a{
+            font-size: 1em;
+            line-height: 60px;
+        }
+        #messageBox{
+            position: absolute;
+            bottom: 0px;
+            margin: 7px;
+
+        }
+    }
+@media screen and (min-width:1000px){
+    #mainChat{
+    display: grid;
+    grid-template-areas: "a c";
+    grid-template-columns: 1.6fr 4.5fr;
+    }
+    
+    #aboutChat{
+        display: block;
+        grid-area: a;
+        overflow-y:scroll;
+
+    }
+    #messageBox{
+        position: absolute;
+        width: 95%;
+       bottom: 0px;
+       margin: 10px;
+    }
+    #chatArea{
+        grid-area: c;
+        
+    }
+    #w3-sidebar,.openNavIcon,ul#exCollapsingNavbar3{
+        display: none;
+    }
+    .aboutLi a{
+        font-size: 1em;
+        line-height: 60px;
+    }
+    }
+
+@media screen and (min-width:1300px){
+    #mainChat{
+    display: grid;
+    grid-template-areas: "a c";
+    grid-template-columns: 1.2fr 4.5fr;
+    }
+    
+    #aboutChat{
+        display: block;
+        grid-area: a;
+        overflow-y:scroll;
+
+    }
+    #chatArea{
+        grid-area: c;
+        
+    }
+    #w3-sidebar,.openNavIcon,ul#exCollapsingNavbar3{
+        display: none;
+    }
+    .aboutLi a{
+        font-size: 1.25em;
+        line-height: 60px;
+    }
+    }
+    .line{
+        width:100vw;
+        height:0px;
+        border-top:white 1px solid; 
+        margin:0px;
+        padding: 0px;
+    }
+  /*  .upload-btn-wrapper {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+      }
+      
+      .btn {
+        border: 2px solid gray;
+        color: gray;
+        background-color: white;
+        padding: 8px 20px;
+        border-radius: 8px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      
+      .upload-btn-wrapper input[type=file] {
+        font-size: 100px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+      }*/

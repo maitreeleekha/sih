@@ -41,6 +41,21 @@ linkMap.set('recommendationFormLink',11);
 
 
 window.onload=init;
+//TODO
+function getBase64Image(img) {
+    var canvas = document.createElement("canvas");
+    canvas.width = img.width;
+    canvas.height = img.height;
+
+    var ctx = canvas.getContext("2d");
+    ctx.drawImage(img, 0, 0);
+
+    var dataURL = canvas.toDataURL("image/png");
+
+    return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+}
+
+//TODO
 function fasterPreview( uploader ) {
     if ( uploader.files && uploader.files[0] ){
           $('#imageProfile').attr('src', 
@@ -49,7 +64,11 @@ function fasterPreview( uploader ) {
 
     propic= $('#imageProfile').attr('src');
     //changeProfilePicSrc();
-    console.log(storageObject.profileSrc);
+    console.log(propic);
+    profileImage = document.getElementById('imageProfile');
+    imgData = getBase64Image(profileImage);
+    localStorage.setItem("imgData", imgData);
+    console.log(imgData);
 }
 function init(){
   
@@ -64,6 +83,7 @@ function init(){
         addAnotherForm();
     });
 
+    //TODO
     $("#uploadImage").click(function(e) {
         $("#imageUpload").click();
     
@@ -73,60 +93,79 @@ function init(){
     
     });
 
-   var educationFormLink= document.querySelector('#educationFormLink');
-    educationFormLink.addEventListener('click',function(){
+   var educationFormLink= document.querySelectorAll('#educationFormLink');
+    educationFormLink.forEach(function(e){
+        e.addEventListener('click',function(){
         showForm('educationFormDiv','educationFormLink');
     });
+});
 
-    var basicInfoFormLink = document.querySelector('#basicInfoFormLink');
-    basicInfoFormLink.addEventListener('click',function(){
+
+    var basicInfoFormLink = document.querySelectorAll('#basicInfoFormLink');
+    basicInfoFormLink.forEach(function(e){
+        e.addEventListener('click',function(){
         showForm('basicInfoFormDiv','basicInfoFormLink');
     });
+});
 
-    var summaryFormLink = document.querySelector('#summaryFormLink');
-    summaryFormLink.addEventListener('click',function(){
+    var summaryFormLink = document.querySelectorAll('#summaryFormLink');
+    summaryFormLink.forEach(function(e){
+        e.addEventListener('click',function(){
         showForm('summaryFormDiv','summaryFormLink');
     });
+});
 
-    var experienceFormLink = document.querySelector('#experienceFormLink');
-    experienceFormLink.addEventListener('click',function(){
+    var experienceFormLink = document.querySelectorAll('#experienceFormLink');
+    experienceFormLink.forEach(function(e){
+        e.addEventListener('click',function(){
         showForm('experienceFormDiv','experienceFormLink');
     });
-    var skillsFormLink = document.querySelector('#skillsFormLink');
-    
-  skillsFormLink.addEventListener('click',function(){
+});
+    var skillsFormLink = document.querySelectorAll('#skillsFormLink');
+     skillsFormLink.forEach(function(e){
+         e.addEventListener('click',function(){
         showForm('skillsFormDiv','skillsFormLink');
     });
+});
 
-    var certificatesFormLink = document.querySelector('#certificatesFormLink');
-    certificatesFormLink.addEventListener('click',function(){
+    var certificatesFormLink = document.querySelectorAll('#certificatesFormLink');
+    certificatesFormLink.forEach(function(e){
+        e.addEventListener('click',function(){
         showForm('certificatesFormDiv','certificatesFormLink');
     });
+});
 
-    var publicationsFormLink = document.querySelector('#publicationsFormLink');
-    publicationsFormLink.addEventListener('click', function(){
+    var publicationsFormLink = document.querySelectorAll('#publicationsFormLink');
+    publicationsFormLink.forEach(function(e){
+        e.addEventListener('click', function(){
         showForm('publicationsFormDiv','publicationsFormLink');
     });
+    });
 
-    var projectsFormLink = document.querySelector('#projectsFormLink');
-    projectsFormLink.addEventListener('click' , function(){
+    var projectsFormLink = document.querySelectorAll('#projectsFormLink');
+    projectsFormLink.forEach(function(e){
+        e.addEventListener('click' , function(){
         showForm('projectsFormDiv','projectsFormLink');
     } );
+});
 
-    var volunteeringFormLink = document.querySelector('#volunteeringFormLink');
-    volunteeringFormLink.addEventListener('click', function(){
+    var volunteeringFormLink = document.querySelectorAll('#volunteeringFormLink');
+    volunteeringFormLink.forEach(function(e){
+        e.addEventListener('click', function(){
         showForm('volunteeringFormDiv','volunteeringFormLink');
     });
-
-    var recommendationFormLink = document.querySelector('#recommendationFormLink');
-    recommendationFormLink.addEventListener('click', function(){
+});
+    var recommendationFormLink = document.querySelectorAll('#recommendationFormLink');
+    recommendationFormLink.forEach(function(e){
+        e.addEventListener('click', function(){
         showForm('recommendationFormDiv','recommendationFormLink');
-    } );
-
-    var languageFormLink = document.querySelector('#languagesFormLink');
-    languageFormLink.addEventListener('click', function(){
-        showForm('langFormDiv','languagesFormLink');
     });
+    });
+    var languageFormLink = document.querySelectorAll('#languagesFormLink');
+    languageFormLink.forEach(function(e){
+        e.addEventListener('click', function(){
+        showForm('langFormDiv','languagesFormLink');
+    });});
 
     var nextFormButton = document.querySelector('#next');
     nextFormButton.addEventListener('click', function(){
@@ -854,6 +893,7 @@ function addAnotherForm(){
            cf.marksFormat.value='Select Format';
            cf.marks.value='';
            cf.achievements.value='';
+           cf.details.value='';
         }
         else if(cloneObject.querySelector('#schoolLink').classList.contains('active')){
             var sf= cloneObject.querySelector('#schoolForm');
@@ -863,6 +903,7 @@ function addAnotherForm(){
              sf.year.value='year';
              sf.board.value='CBSE';
              sf.marks.value='';
+             sf.details.value=''
         }
 
 

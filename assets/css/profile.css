@@ -49,6 +49,10 @@ body{
     font-size: 1.5em;
 
 }
+
+.formatting{
+    box-shadow:2px 2px 8px grey;
+}
 #profileHeaderForm{
     display:none;
     width:120%;

@@ -1,0 +1,37 @@
+body{
+    background-color: whitesmoke;
+}
+.container{
+    width: 98%;
+    padding: 1%;
+    background-color: transparent;
+}
+.sub{
+    padding: 2%;
+    box-shadow: 1px 1.5px 8px gray;
+}
+.container .sub{
+    background-color: white;
+}
+#timer{
+    float:right;
+}
+.container h1{
+    font-size: 1.5em;
+}
+
+.progress-bar{
+    background-color: rgb(181, 201, 28);
+    width: 10%;
+}
+
+@media screen and (min-width:768px){
+    .container h1{
+        font-size: 2em;
+    }
+    #perComplete{
+    font-size: 1.5em;
+    }
+    
+    
+}

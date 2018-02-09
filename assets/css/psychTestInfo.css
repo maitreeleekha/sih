@@ -1,0 +1,90 @@
+.container{
+    width: 75%;
+    height: 100vh;
+}
+.container>div{
+    background-color: white;
+    margin: 2%;
+    padding: 2%;
+    box-shadow: 1px 1.5px 8px gray;
+}
+
+.heading, .sub{
+    text-align: justify;
+    padding: 5%;
+}
+.container div h1{
+    font-size: 2em;
+    text-align: center;
+}
+
+ol ol{
+    list-style-type: lower-alpha;
+}
+li{
+    text-align: justify;
+    font-size: 12pt;
+}
+
+#image{
+    display: block;
+    width: 70%;
+    height: 70%;      
+    margin: 2% auto; 
+
+}
+#takeTest{
+    min-width:100px;
+    width: max-content;
+    display: block;
+    margin: 2% auto;
+}
+.grow { transition: all .7s ease-in-out; 
+}
+
+.growBig{
+    transition: all .7s ease-in-out;
+    transform: scale(1.25);
+}
+.grow:hover { transform: scale(1.25); }
+body{
+    background-color: whitesmoke !important;
+}
+.instructions{
+display: block;
+}
+
+@media screen and (min-width:1330px){
+    .instructions{
+        display: flex;
+        flex-direction: row;
+    }
+    .instructions .sub{
+        width: 60%;
+    }
+    .instructions button{
+        width: 40%;
+        position: relative;
+        left: 30%;
+    }
+    #image{
+        width: 300px;
+        height: 300px;      
+        margin: 30% auto;
+        position: relative;
+        left: 5%; 
+    }
+    
+    #takeTest{
+        position: relative;
+        left: 15%;
+    }
+    .growBig{
+        transition: all .7s ease-in-out;
+        transform: scale(1.4);
+    }
+    .grow:hover { transform: scale(1.4); }
+    body{
+        background-color: whitesmoke !important;
+    }
+}

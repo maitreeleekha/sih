@@ -214,5 +214,5 @@ a:hover{
 }
 
 .dropdown-menu{
-    background-color: rgb(6, 1, 27) !important;
+    background: linear-gradient(to right, rgba(82, 26, 77, 0.486) , rgba(118, 190, 223, 0.493));
 }

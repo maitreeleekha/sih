@@ -12,7 +12,7 @@ body{
     width: 20%;
     height: 60px;
     margin: 2.5%;
-    background-color: rgba(172, 192, 42, 0.582);
+    background:rgba(82, 26, 77, 0.486) ;
     box-shadow: 4px 4px 8px gray;
     border-radius: 10px;
     line-height: 60px;
@@ -21,7 +21,7 @@ body{
 }
 
 .chatRoom:hover{
-    background-color: rgb(172, 192, 42);
+    background: linear-gradient(to right, rgba(82, 26, 77, 0.589) , rgba(118, 193, 223, 0.651));
     box-shadow: 4px 4px 16px gray;
 }
 @media screen and (max-width:767px){

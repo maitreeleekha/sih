@@ -1,0 +1,61 @@
+#mainNav{
+    background: linear-gradient(to right, rgb(82, 26, 77) , rgb(118, 188, 223));
+}
+body{
+    width: 100vw;
+}
+
+.heading{
+    margin: 2.5% 0px;
+    text-align: center;
+   /* background-image: url(../../images/knowledge-banner.jpg);
+    background-size: cover;
+    height: 100%;*/
+}
+.heading img{
+    min-height: 50px;
+    margin: 5% 0px;
+}
+.heading h1{
+    font-size: 3em;
+}
+.heading input{
+    width: 70%;
+    margin: 0px auto;
+    margin-top: 2.5%;
+    box-shadow: 2px 2px 5px gray;
+}
+
+#videos{
+    display: flex;
+    flex-direction: column;
+}
+iframe{
+    width: 70%;
+    height: 70%;
+    margin: 5% auto;
+}
+@media screen and (min-width:500px){
+    #videos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    iframe{
+        margin: 2% auto;
+        width: 35%;
+        height: 35%;
+    }
+}
+@media screen and (min-width:768px){
+    #videos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    iframe{
+        margin: 2%;
+        width: 20%;
+        height: 20%;
+    }
+}

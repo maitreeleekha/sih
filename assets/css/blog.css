@@ -1,0 +1,133 @@
+.whiteDivs{
+    background-color: white;
+    box-shadow:2px 2px 8px grey;
+    margin: 2%;
+    padding: 1%;
+}
+
+#blogsMain{
+    background-color: transparent;
+}
+
+.titleBlog{
+    font-size: 1.5em !important;
+    text-align: left !important ;
+}
+.imgBlog{
+    width: 70%;
+    margin: 2% auto;
+    display: block;
+}
+.descBlog{
+    font-size: 1em ;
+    margin-bottom: 0px;
+}
+
+.blogTime, .blogLikes{
+    color: grey;
+}
+.blogImageUpload{
+    height: 70%;
+    min-height: 100px;
+    border: dashed grey thin;
+    margin: 2%;
+    text-align: center;
+
+}
+
+
+i.toggleLike{
+    position: relative;
+    left: 87%;
+    margin: 1.5%;
+    font-size: 2.5em !important;
+    color:grey;
+}
+
+i.toggleLike:hover{
+    color: rgba(180, 14, 14, 0.938);
+}
+
+.dislike{
+    color: grey;
+}
+i.like{
+    color: rgba(180, 14, 14, 0.938);
+}
+
+i.like:hover , i.like:active, i.like:focus{
+    color: grey;
+}
+i.dislike:hover , i.dislike:active, i.dislike:focus{
+    color: rgba(180, 14, 14, 0.801);
+}
+.blogImage{
+
+    display: block;
+    margin: 5% auto;
+    width: 40%;
+    height: 40%;
+   
+}
+
+form.blogger{
+   width: 70%;
+   margin: 2% auto;
+   display: none; 
+}
+
+#saveBlog , #cancelBlog{
+    width: 30%;
+    margin: 2%;
+    min-width: 70px;
+}
+
+.blogTemplate{
+    margin: 2%;
+    padding: 1%;
+}
+
+.deletePost, .editPost{
+    float:right;
+    margin: 1%;
+}
+
+@media screen and (max-width:780px){
+    .likeSpan{
+        left: 85% ;
+
+    }
+}
+@media screen and (max-width:500px){
+    .deletePost, .editPost{
+        width: 40%;
+        display: block;
+        margin: 1% auto;
+    }
+    
+    form.blogger{
+        width: 95%;
+        margin: 2% auto;
+        display: none; 
+     }
+
+     #saveBlog , #cancelBlog{
+        width: 30%;
+        margin: 2% auto;
+        min-width: 70px;
+    }
+    
+    .blogImage{
+        
+            display: block;
+            margin: 5% auto;
+            width: 60%;
+            height: 60%;
+           
+        }
+        .likeSpan{
+            left: 50%;
+        }
+         
+}
+

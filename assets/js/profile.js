@@ -54,6 +54,8 @@ function removeIfEmpty(){
 }
 function init(){
 
+document.querySelector('#profile');
+
 removeIfEmpty();
     
 console.log(document.querySelector('#aboutMe').childNodes['0'].childNodes.length);

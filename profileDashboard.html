@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/signup.css" />
 	<link rel="stylesheet" href="assets/css/profile.css" />
+	<link rel="stylesheet" href="assets/css/blog.css" />
 </head>
 
 <body class="subpage">
@@ -26,41 +27,41 @@
 
 	<!-- Header -->
 	<nav class="navbar navbar-expand-md" id="mainNav">
-			<a class="navbar-brand" href="index.html">
-				<i class="fa fa-sign-language" aria-hidden="true"></i>
-			</a>
-			<a class="navbar-toggler" id="toggleButton" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-			 aria-expanded="false" aria-label="Toggle navigation">
-				<i class="fa fa-bars" aria-hidden="true"></i>
-			</a>
-			<div class=" collapse navbar-collapse mr-auto" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto" style="margin-right:10%">
-					<li class="nav-item active">
-						<a class="nav-link" href="index.html">Home
-							<span class="sr-only">(current)</span>
-						</a>
-					</li>
-					<div class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
-								<span>Features</span>
-							</a>
-							<div class="dropdown-menu" role="menu">
-								<a class="dropdown-item" href="cvForm.html">CV Generator</a>
-								<a class="dropdown-item" href="#">Psychometric Test</a>
-						
-							</div>
-						</div>
-						<div class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
-								<span>User</span>
-							</a>
-							<div class="dropdown-menu" role="menu">
-								<a class="dropdown-item"  id="dashboard">Dashboard</a>
-								<a class="dropdown-item" href="login.html" id="login">Login</a>
-								<a class="dropdown-item" href="signup.html">Sign Up</a>
-								
-							</div>
-						</div>
+		<a class="navbar-brand" href="index.html">
+			<i class="fa fa-sign-language" aria-hidden="true"></i>
+		</a>
+		<a class="navbar-toggler" id="toggleButton" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+		 aria-expanded="false" aria-label="Toggle navigation">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</a>
+		<div class=" collapse navbar-collapse mr-auto" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto" style="margin-right:10%">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<div class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+						<span>Features</span>
+					</a>
+					<div class="dropdown-menu" role="menu">
+						<a class="dropdown-item" href="cvForm.html">CV Generator</a>
+						<a class="dropdown-item" href="#">Psychometric Test</a>
+
+					</div>
+				</div>
+				<div class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+						<span>User</span>
+					</a>
+					<div class="dropdown-menu" role="menu">
+						<a class="dropdown-item" id="dashboard">Dashboard</a>
+						<a class="dropdown-item" href="login.html" id="login">Login</a>
+						<a class="dropdown-item" href="signup.html">Sign Up</a>
+
+					</div>
+				</div>
 				<!--	<li class="nav-item">
 						<a class="nav-link" id="dashboard" href=''>Dashboard</a>
 					</li>
@@ -71,8 +72,8 @@
 						<a class="nav-link" href="signup.html">Signup</a>
 					</li>
 				-->
-	
-					<!--	<li class="dropdown nav-item">
+
+				<!--	<li class="dropdown nav-item">
 						<a class="dropdown-toggle nav-link" id="menu1" data-toggle="dropdown">
 							<i class="fa fa-user" aria-hidden="true"></i>
 							<span class="caret"></span>
@@ -93,8 +94,8 @@
 							
 						</ul>
 					</li>-->
-	
-					<!--<li>
+
+				<!--<li>
 						<div class="dropdown">
 							<a onclick="myFunction()" class="dropbtn">Dropdown</button>
 							  <div id="myDropdown" class="dropdown-content">
@@ -104,10 +105,10 @@
 							  </div>
 							</div>
 					</li>-->
-					
-					<!--SAMPLE DROPDOWN-->
-					
-					<!--
+
+				<!--SAMPLE DROPDOWN-->
+
+				<!--
 						<div class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
 							<span>Menu</span>
@@ -121,14 +122,14 @@
 						</div>
 					</div>
 					-->
-	
-				</ul>
-	
-			</div>
-	
-	
-		</nav>
-	
+
+			</ul>
+
+		</div>
+
+
+	</nav>
+
 
 	<!-- Header 
 	<header id="header">
@@ -170,9 +171,9 @@
 
 	<!-- Footer -->
 	<br>
-	
+
 	<div class="container">
-		<section id="profileHeader" class="formatting" >
+		<section id="profileHeader" class="formatting">
 			<i id="editProfileHeader" class="fa fa-pencil-square-o" aria-hidden="true">
 				<section>Edit</section>
 			</i>
@@ -199,661 +200,693 @@
 				<img src="images\profile-placeholder.png" id="imageProfile" class="rounded" title="click to edit profile picture">
 				<input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required="" capture>
 			</div>
-			<!--<div id="profile_blog">
-				<button id="profile">Profile</button>
-				<button id="blog">Blog</button>
-			</div>-->
 		</section>
 
-		<button id="editProfile">Update Your Profile</button>
-		<button id="done">DONE</button>
+		<div id="profile_blog">
+			<button id="profile">Profile</button>
+			<button id="blog">Blog</button>
+		</div>
+		<div id="profileSection">
+			<button id="editProfile">Update Your Profile</button>
+			<button id="done">DONE</button>
 
-
-		<!--	<section id="profileSnapshot" title="A synopsis of your profile is important to strengthen your candidature in the eyes of the employers. Here you give critical information without sharing much details. As the name suggest, ‘Snapshot’ represent the outline of your profile with an intelligent use of keywords that would display your strengths.">
-				<h3>Profile Snapshot</h3>
-				A synopsis of your profile is important to strengthen your candidature in the eyes of the employers. Here you give critical
-				information without sharing much details. As the name suggest, ‘Snapshot’ represent the outline of your profile with
-				an intelligent use of keywords that would display your strengths.
-				<i class="fa fa-pencil-square-o" aria-hidden="true">
-					<section>Edit</section>
+			<section id="aboutMain" class="formatting">
+				<i class="fa fa-user" aria-hidden="true"></i>About
+				<i class="fa fa-plus-square-o" id="addAbout" aria-hidden="true">
+					<section>Add Something</section>
 				</i>
-			</section>
-		-->
-		<section id="aboutMain" class="formatting">
-			<i class="fa fa-user" aria-hidden="true"></i>About
-			<i class="fa fa-plus-square-o" id="addAbout" aria-hidden="true"><section>Add Something</section>		</i>
-			<section id="aboutMe">
-			</section>
-			<form id="aboutForm">
-				<label>About</label>
-				<textarea name="aboutArea" placeholder="Write something about yourself"></textarea>
-			</form>
-			<section class="buttonGroup">
-				<button type="button" id="saveAbout">SAVE</button>
-				<button type="button" id="cancelAbout">CANCEL</button>
-			</section>
-		</section>
-
-		<section id="education" class="formatting">
-			<i class="fa fa-university" aria-hidden="true"></i>Education
-			<i class="fa fa-plus-square-o" id="addEducation" aria-hidden="true">
-				<section>Add Education</section>
-			</i>
-
-			<section id="edu">
-
-			</section>
-			<ul class="nav nav-tabs" id="school_collegeNav">
-				<li id="college" class="nav-item">
-					<a id="collegeLink" class="nav-link active" onclick="makeActive(this);">College</a>
-				</li>
-				<li id="school" class="nav-item">
-					<a id="schoolLink" class="nav-link" onclick="makeActive(this);">School</a>
-				</li>
-			</ul>
-
-			<form id="collegeForm">
-
-				<label for="collegeName">College</label>
-				<input type="text" id="collegeName" name="collegeName" placeholder="College">
-
-				<label for="university">University</label>
-				<input type="text" id="university" name="university" placeholder="University">
-
-				<label for="course">Course</label>
-				<input type="text" id="course" name="course" placeholder="Course">
-
-				<label for="specialization">Specialization</label>
-				<input type="text" name="specialization" id="specialization" placeholder="Specialization">
-
-				<div class="form-row">
-					<div class="col">
-						<label for="batchStart">Batch Start</label>
-						<select id="batchStart" name="batchStart">
-							<option>year</option>
-							<option>1978</option>
-							<option>1979</option>
-							<option>1980</option>
-							<option>1981</option>
-							<option>1982</option>
-							<option>1983</option>
-							<option>1984</option>
-							<option>1985</option>
-							<option>1986</option>
-							<option>1987</option>
-							<option>1988</option>
-							<option>1989</option>
-							<option>1990</option>
-							<option>1991</option>
-							<option>1992</option>
-							<option>1993</option>
-							<option>1994</option>
-							<option>1995</option>
-							<option>1996</option>
-							<option>1997</option>
-							<option>1998</option>
-							<option>1999</option>
-							<option>2000</option>
-							<option>2001</option>
-							<option>2002</option>
-							<option>2003</option>
-							<option>2004</option>
-							<option>2005</option>
-							<option>2006</option>
-							<option>2007</option>
-							<option>2008</option>
-							<option>2009</option>
-							<option>2010</option>
-							<option>2011</option>
-							<option>2012</option>
-							<option>2013</option>
-							<option>2014</option>
-							<option>2015</option>
-							<option>2016</option>
-							<option>2017</option>
-							<option>2018</option>
-						</select>
-					</div>
-					<div class="col">
-						<label for="batchEnd">Batch End</label>
-						<select id="batchEnd" name="batchEnd">
-							<option>year</option>
-							<option>1978</option>
-							<option>1979</option>
-							<option>1980</option>
-							<option>1981</option>
-							<option>1982</option>
-							<option>1983</option>
-							<option>1984</option>
-							<option>1985</option>
-							<option>1986</option>
-							<option>1987</option>
-							<option>1988</option>
-							<option>1989</option>
-							<option>1990</option>
-							<option>1991</option>
-							<option>1992</option>
-							<option>1993</option>
-							<option>1994</option>
-							<option>1995</option>
-							<option>1996</option>
-							<option>1997</option>
-							<option>1998</option>
-							<option>1999</option>
-							<option>2000</option>
-							<option>2001</option>
-							<option>2002</option>
-							<option>2003</option>
-							<option>2004</option>
-							<option>2005</option>
-							<option>2006</option>
-							<option>2007</option>
-							<option>2008</option>
-							<option>2009</option>
-							<option>2010</option>
-							<option>2011</option>
-							<option>2012</option>
-							<option>2013</option>
-							<option>2014</option>
-							<option>2015</option>
-							<option>2016</option>
-							<option>2017</option>
-							<option>2018</option>
-							<option>2019</option>
-							<option>2020</option>
-							<option>2021</option>
-							<option>2022</option>
-						</select>
-					</div>
-					<div class="col">
-						<input type="checkbox" value="" id="isCurrentEducation">
-						<label for="isCurrentEducation">is My Current Education</label>
-					</div>
-				</div>
-
-				<label for="marksRow">Marks</label>
-				<div class="form-row" id="marksRow">
-
-					<div class="col" id="marksDiv">
-						<input name="marks" type="text" id="marks" placeholder="eg: 95.4%, 9.5/10">
-					</div>
-
-				</div>
-				<div class="form-row">
-					<label for="achievements">Academic Achievements</label>
-					<textarea id="achievements" placeholder="optional" name="achievements"></textarea>
-				</div>
-			</form>
-
-			<form id="schoolForm">
-				<label for="schoolName">School</label>
-				<input type="text" id="schoolName" name="schoolName" placeholder="School">
-
-				<div class="form-row">
-					<div class="col">
-						<label for="class">Class</label>
-						<select id="class" name="class">
-							<option>class</option>
-							<option>10th</option>
-							<option>12th</option>
-						</select>
-					</div>
-					<div class="col">
-						<label for="stream">Stream</label>
-						<select id="stream" name="stream">
-							<option>Stream</option>
-							<option>Humanities</option>
-							<option>Commerce</option>
-							<option>Science</option>
-						</select>
-					</div>
-					<div class="col">
-						<label for="year">Year</label>
-						<select id="year" name="year">
-							<option>1990</option>
-							<option>1998</option>
-							<option>2000</option>
-						</select>
-					</div>
-				</div>
-				<div class="form-row">
-					<div class="col">
-						<label for="board">Board</label>
-						<select id="board" name="board">
-							<option>CBSE</option>
-							<option>ICSE</option>
-							<option>State Board</option>
-						</select>
-					</div>
-
-					<div class="col">
-					</div>
-				</div>
-				<label for="marksRow2">Marks</label>
-				<div class="form-row" id="marksRow2">
-					<div class="col" id="marks2">
-						<input type="text" id="percentMarks2" name="marks">
-					</div>
-				</div>
-
-			</form>
-			<section class="buttonGroup">
-				<button type="button" id="saveEducation">SAVE</button>
-				<button type="button" id="cancelEducation">CANCEL</button>
+				<section id="aboutMe">
+				</section>
+				<form id="aboutForm">
+					<label>About</label>
+					<textarea name="aboutArea" placeholder="Write something about yourself"></textarea>
+				</form>
+				<section class="buttonGroup">
+					<button type="button" id="saveAbout">SAVE</button>
+					<button type="button" id="cancelAbout">CANCEL</button>
+				</section>
 			</section>
 
-		</section>
+			<section id="education" class="formatting">
+				<i class="fa fa-university" aria-hidden="true"></i>Education
+				<i class="fa fa-plus-square-o" id="addEducation" aria-hidden="true">
+					<section>Add Education</section>
+				</i>
 
+				<section id="edu">
 
-		<section id="experience" class="formatting">
-			<i class="fa fa-briefcase" aria-hidden="true"></i>Work Experience
-			<i class="fa fa-plus-square-o" id="addExperience" aria-hidden="true">
-				<section>Add Experience</section>
-			</i>
-			<section id="exp">
+				</section>
+				<ul class="nav nav-tabs" id="school_collegeNav">
+					<li id="college" class="nav-item">
+						<a id="collegeLink" class="nav-link active" onclick="makeActive(this);">College</a>
+					</li>
+					<li id="school" class="nav-item">
+						<a id="schoolLink" class="nav-link" onclick="makeActive(this);">School</a>
+					</li>
+				</ul>
+
+				<form id="collegeForm">
+
+					<label for="collegeName">College</label>
+					<input type="text" id="collegeName" name="collegeName" placeholder="College">
+
+					<label for="university">University</label>
+					<input type="text" id="university" name="university" placeholder="University">
+
+					<label for="course">Course</label>
+					<input type="text" id="course" name="course" placeholder="Course">
+
+					<label for="specialization">Specialization</label>
+					<input type="text" name="specialization" id="specialization" placeholder="Specialization">
+
+					<div class="form-row">
+						<div class="col">
+							<label for="batchStart">Batch Start</label>
+							<select id="batchStart" name="batchStart">
+								<option>year</option>
+								<option>1978</option>
+								<option>1979</option>
+								<option>1980</option>
+								<option>1981</option>
+								<option>1982</option>
+								<option>1983</option>
+								<option>1984</option>
+								<option>1985</option>
+								<option>1986</option>
+								<option>1987</option>
+								<option>1988</option>
+								<option>1989</option>
+								<option>1990</option>
+								<option>1991</option>
+								<option>1992</option>
+								<option>1993</option>
+								<option>1994</option>
+								<option>1995</option>
+								<option>1996</option>
+								<option>1997</option>
+								<option>1998</option>
+								<option>1999</option>
+								<option>2000</option>
+								<option>2001</option>
+								<option>2002</option>
+								<option>2003</option>
+								<option>2004</option>
+								<option>2005</option>
+								<option>2006</option>
+								<option>2007</option>
+								<option>2008</option>
+								<option>2009</option>
+								<option>2010</option>
+								<option>2011</option>
+								<option>2012</option>
+								<option>2013</option>
+								<option>2014</option>
+								<option>2015</option>
+								<option>2016</option>
+								<option>2017</option>
+								<option>2018</option>
+							</select>
+						</div>
+						<div class="col">
+							<label for="batchEnd">Batch End</label>
+							<select id="batchEnd" name="batchEnd">
+								<option>year</option>
+								<option>1978</option>
+								<option>1979</option>
+								<option>1980</option>
+								<option>1981</option>
+								<option>1982</option>
+								<option>1983</option>
+								<option>1984</option>
+								<option>1985</option>
+								<option>1986</option>
+								<option>1987</option>
+								<option>1988</option>
+								<option>1989</option>
+								<option>1990</option>
+								<option>1991</option>
+								<option>1992</option>
+								<option>1993</option>
+								<option>1994</option>
+								<option>1995</option>
+								<option>1996</option>
+								<option>1997</option>
+								<option>1998</option>
+								<option>1999</option>
+								<option>2000</option>
+								<option>2001</option>
+								<option>2002</option>
+								<option>2003</option>
+								<option>2004</option>
+								<option>2005</option>
+								<option>2006</option>
+								<option>2007</option>
+								<option>2008</option>
+								<option>2009</option>
+								<option>2010</option>
+								<option>2011</option>
+								<option>2012</option>
+								<option>2013</option>
+								<option>2014</option>
+								<option>2015</option>
+								<option>2016</option>
+								<option>2017</option>
+								<option>2018</option>
+								<option>2019</option>
+								<option>2020</option>
+								<option>2021</option>
+								<option>2022</option>
+							</select>
+						</div>
+						<div class="col">
+							<input type="checkbox" value="" id="isCurrentEducation">
+							<label for="isCurrentEducation">is My Current Education</label>
+						</div>
+					</div>
+
+					<label for="marksRow">Marks</label>
+					<div class="form-row" id="marksRow">
+
+						<div class="col" id="marksDiv">
+							<input name="marks" type="text" id="marks" placeholder="eg: 95.4%, 9.5/10">
+						</div>
+
+					</div>
+					<div class="form-row">
+						<label for="achievements">Academic Achievements</label>
+						<textarea id="achievements" placeholder="optional" name="achievements"></textarea>
+					</div>
+				</form>
+
+				<form id="schoolForm">
+					<label for="schoolName">School</label>
+					<input type="text" id="schoolName" name="schoolName" placeholder="School">
+
+					<div class="form-row">
+						<div class="col">
+							<label for="class">Class</label>
+							<select id="class" name="class">
+								<option>class</option>
+								<option>10th</option>
+								<option>12th</option>
+							</select>
+						</div>
+						<div class="col">
+							<label for="stream">Stream</label>
+							<select id="stream" name="stream">
+								<option>Stream</option>
+								<option>Humanities</option>
+								<option>Commerce</option>
+								<option>Science</option>
+							</select>
+						</div>
+						<div class="col">
+							<label for="year">Year</label>
+							<select id="year" name="year">
+								<option>1990</option>
+								<option>1998</option>
+								<option>2000</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col">
+							<label for="board">Board</label>
+							<select id="board" name="board">
+								<option>CBSE</option>
+								<option>ICSE</option>
+								<option>State Board</option>
+							</select>
+						</div>
+
+						<div class="col">
+						</div>
+					</div>
+					<label for="marksRow2">Marks</label>
+					<div class="form-row" id="marksRow2">
+						<div class="col" id="marks2">
+							<input type="text" id="percentMarks2" name="marks">
+						</div>
+					</div>
+
+				</form>
+				<section class="buttonGroup">
+					<button type="button" id="saveEducation">SAVE</button>
+					<button type="button" id="cancelEducation">CANCEL</button>
+				</section>
 
 			</section>
 
-			<form id="experienceForm">
-				<div class="form-row">
-					<label for="company">Company</label>
-					<input type="text" id="company" name="company">
-				</div>
-				<div class="form-row">
-					<label for="type">Type</label>
-					<select id="type" name="type">
-						<option>Job Type</option>
-						<option>Internship</option>
-						<option>Part Time</option>
-						<option>Full Time</option>
-					</select>
-				</div>
-				<label>Duration</label>
-				<div class="form-row">
-					<div class="col">
 
-						<select name="startMonth" id="startMonth">
-							<option>January</option>
-							<option>February</option>
-							<option>March</option>
-							<option>April</option>
-							<option>May</option>
-							<option>June</option>
-							<option>July</option>
-							<option>August</option>
-							<option>September</option>
-							<option>October</option>
-							<option>November</option>
-							<option>December</option>
+			<section id="experience" class="formatting">
+				<i class="fa fa-briefcase" aria-hidden="true"></i>Work Experience
+				<i class="fa fa-plus-square-o" id="addExperience" aria-hidden="true">
+					<section>Add Experience</section>
+				</i>
+				<section id="exp">
+
+				</section>
+
+				<form id="experienceForm">
+					<div class="form-row">
+						<label for="company">Company</label>
+						<input type="text" id="company" name="company">
+					</div>
+					<div class="form-row">
+						<label for="type">Type</label>
+						<select id="type" name="type">
+							<option>Job Type</option>
+							<option>Internship</option>
+							<option>Part Time</option>
+							<option>Full Time</option>
 						</select>
 					</div>
-					<div class="col">
-						<select name="startYear" id="startYear">
-							<option>year</option>
-							<option>1978</option>
-							<option>1979</option>
-							<option>1980</option>
-							<option>1981</option>
-							<option>1982</option>
-							<option>1983</option>
-							<option>1984</option>
-							<option>1985</option>
-							<option>1986</option>
-							<option>1987</option>
-							<option>1988</option>
-							<option>1989</option>
-							<option>1990</option>
-							<option>1991</option>
-							<option>1992</option>
-							<option>1993</option>
-							<option>1994</option>
-							<option>1995</option>
-							<option>1996</option>
-							<option>1997</option>
-							<option>1998</option>
-							<option>1999</option>
-							<option>2000</option>
-							<option>2001</option>
-							<option>2002</option>
-							<option>2003</option>
-							<option>2004</option>
-							<option>2005</option>
-							<option>2006</option>
-							<option>2007</option>
-							<option>2008</option>
-							<option>2009</option>
-							<option>2010</option>
-							<option>2011</option>
-							<option>2012</option>
-							<option>2013</option>
-							<option>2014</option>
-							<option>2015</option>
-							<option>2016</option>
-							<option>2017</option>
-							<option>2018</option>
-						</select>
+					<label>Duration</label>
+					<div class="form-row">
+						<div class="col">
+
+							<select name="startMonth" id="startMonth">
+								<option>January</option>
+								<option>February</option>
+								<option>March</option>
+								<option>April</option>
+								<option>May</option>
+								<option>June</option>
+								<option>July</option>
+								<option>August</option>
+								<option>September</option>
+								<option>October</option>
+								<option>November</option>
+								<option>December</option>
+							</select>
+						</div>
+						<div class="col">
+							<select name="startYear" id="startYear">
+								<option>year</option>
+								<option>1978</option>
+								<option>1979</option>
+								<option>1980</option>
+								<option>1981</option>
+								<option>1982</option>
+								<option>1983</option>
+								<option>1984</option>
+								<option>1985</option>
+								<option>1986</option>
+								<option>1987</option>
+								<option>1988</option>
+								<option>1989</option>
+								<option>1990</option>
+								<option>1991</option>
+								<option>1992</option>
+								<option>1993</option>
+								<option>1994</option>
+								<option>1995</option>
+								<option>1996</option>
+								<option>1997</option>
+								<option>1998</option>
+								<option>1999</option>
+								<option>2000</option>
+								<option>2001</option>
+								<option>2002</option>
+								<option>2003</option>
+								<option>2004</option>
+								<option>2005</option>
+								<option>2006</option>
+								<option>2007</option>
+								<option>2008</option>
+								<option>2009</option>
+								<option>2010</option>
+								<option>2011</option>
+								<option>2012</option>
+								<option>2013</option>
+								<option>2014</option>
+								<option>2015</option>
+								<option>2016</option>
+								<option>2017</option>
+								<option>2018</option>
+							</select>
+						</div>
+						-
+						<div class="col">
+							<select name="endMonth" id="endMonth">
+								<option>January</option>
+								<option>February</option>
+								<option>March</option>
+								<option>April</option>
+								<option>May</option>
+								<option>June</option>
+								<option>July</option>
+								<option>August</option>
+								<option>September</option>
+								<option>October</option>
+								<option>November</option>
+								<option>December</option>
+							</select>
+						</div>
+						<div class="col">
+							<select name="endYear" id="endYear">
+								<option>year</option>
+								<option>1978</option>
+								<option>1979</option>
+								<option>1980</option>
+								<option>1981</option>
+								<option>1982</option>
+								<option>1983</option>
+								<option>1984</option>
+								<option>1985</option>
+								<option>1986</option>
+								<option>1987</option>
+								<option>1988</option>
+								<option>1989</option>
+								<option>1990</option>
+								<option>1991</option>
+								<option>1992</option>
+								<option>1993</option>
+								<option>1994</option>
+								<option>1995</option>
+								<option>1996</option>
+								<option>1997</option>
+								<option>1998</option>
+								<option>1999</option>
+								<option>2000</option>
+								<option>2001</option>
+								<option>2002</option>
+								<option>2003</option>
+								<option>2004</option>
+								<option>2005</option>
+								<option>2006</option>
+								<option>2007</option>
+								<option>2008</option>
+								<option>2009</option>
+								<option>2010</option>
+								<option>2011</option>
+								<option>2012</option>
+								<option>2013</option>
+								<option>2014</option>
+								<option>2015</option>
+								<option>2016</option>
+								<option>2017</option>
+								<option>2018</option>
+							</select>
+						</div>
 					</div>
-					-
-					<div class="col">
-						<select name="endMonth" id="endMonth">
-							<option>January</option>
-							<option>February</option>
-							<option>March</option>
-							<option>April</option>
-							<option>May</option>
-							<option>June</option>
-							<option>July</option>
-							<option>August</option>
-							<option>September</option>
-							<option>October</option>
-							<option>November</option>
-							<option>December</option>
-						</select>
+					<div class="form-row">
+						<label for="responsibilities">Responsibilities</label>
+						<textarea id="responsibilities" name="responsibilities" placeholder="Responsibilities"></textarea>
 					</div>
-					<div class="col">
-						<select name="endYear" id="endYear">
-							<option>year</option>
-							<option>1978</option>
-							<option>1979</option>
-							<option>1980</option>
-							<option>1981</option>
-							<option>1982</option>
-							<option>1983</option>
-							<option>1984</option>
-							<option>1985</option>
-							<option>1986</option>
-							<option>1987</option>
-							<option>1988</option>
-							<option>1989</option>
-							<option>1990</option>
-							<option>1991</option>
-							<option>1992</option>
-							<option>1993</option>
-							<option>1994</option>
-							<option>1995</option>
-							<option>1996</option>
-							<option>1997</option>
-							<option>1998</option>
-							<option>1999</option>
-							<option>2000</option>
-							<option>2001</option>
-							<option>2002</option>
-							<option>2003</option>
-							<option>2004</option>
-							<option>2005</option>
-							<option>2006</option>
-							<option>2007</option>
-							<option>2008</option>
-							<option>2009</option>
-							<option>2010</option>
-							<option>2011</option>
-							<option>2012</option>
-							<option>2013</option>
-							<option>2014</option>
-							<option>2015</option>
-							<option>2016</option>
-							<option>2017</option>
-							<option>2018</option>
-						</select>
+					<div class="form-row">
+						<label for="achievements">Achievements</label>
+						<textarea id="achievements" name="achievements" placeholder="Achievements"></textarea>
 					</div>
-				</div>
-				<div class="form-row">
-					<label for="responsibilities">Responsibilities</label>
-					<textarea id="responsibilities" name="responsibilities" placeholder="Responsibilities"></textarea>
-				</div>
-				<div class="form-row">
-					<label for="achievements">Achievements</label>
-					<textarea id="achievements" name="achievements" placeholder="Achievements"></textarea>
-				</div>
-			</form>
-			<section class="buttonGroup">
-				<button type="button" id="saveExperience">SAVE</button>
-				<button type="button" id="cancelExperience">CANCEL</button>
+				</form>
+				<section class="buttonGroup">
+					<button type="button" id="saveExperience">SAVE</button>
+					<button type="button" id="cancelExperience">CANCEL</button>
+				</section>
 			</section>
-		</section>
 
-		<section id="projects" class="formatting">
-			<i class="fa fa-lightbulb-o" aria-hidden="true"></i>Key Projects
-			<i class="fa fa-plus-square-o" id="addProject" aria-hidden="true">
-				<section>Add Project</section>
-			</i>
-			<section id="pro">
+			<section id="projects" class="formatting">
+				<i class="fa fa-lightbulb-o" aria-hidden="true"></i>Key Projects
+				<i class="fa fa-plus-square-o" id="addProject" aria-hidden="true">
+					<section>Add Project</section>
+				</i>
+				<section id="pro">
 
+				</section>
+				<form id="projectForm">
+					<label for="projectTitle">Project Title</label>
+					<input type="text" id="title" name="title" placeholder="Project Title">
+					<label>Duration</label>
+					<div class="form-row">
+						<div class="col">
+
+							<select name="startMonth" id="startMonth">
+								<option>January</option>
+								<option>February</option>
+								<option>March</option>
+								<option>April</option>
+								<option>May</option>
+								<option>June</option>
+								<option>July</option>
+								<option>August</option>
+								<option>September</option>
+								<option>October</option>
+								<option>November</option>
+								<option>December</option>
+							</select>
+						</div>
+						<div class="col">
+							<select name="startYear" id="startYear">
+								<option>year</option>
+								<option>1978</option>
+								<option>1979</option>
+								<option>1980</option>
+								<option>1981</option>
+								<option>1982</option>
+								<option>1983</option>
+								<option>1984</option>
+								<option>1985</option>
+								<option>1986</option>
+								<option>1987</option>
+								<option>1988</option>
+								<option>1989</option>
+								<option>1990</option>
+								<option>1991</option>
+								<option>1992</option>
+								<option>1993</option>
+								<option>1994</option>
+								<option>1995</option>
+								<option>1996</option>
+								<option>1997</option>
+								<option>1998</option>
+								<option>1999</option>
+								<option>2000</option>
+								<option>2001</option>
+								<option>2002</option>
+								<option>2003</option>
+								<option>2004</option>
+								<option>2005</option>
+								<option>2006</option>
+								<option>2007</option>
+								<option>2008</option>
+								<option>2009</option>
+								<option>2010</option>
+								<option>2011</option>
+								<option>2012</option>
+								<option>2013</option>
+								<option>2014</option>
+								<option>2015</option>
+								<option>2016</option>
+								<option>2017</option>
+								<option>2018</option>
+							</select>
+						</div>
+						-
+						<div class="col">
+							<select name="endMonth" id="endMonth">
+								<option>January</option>
+								<option>February</option>
+								<option>March</option>
+								<option>April</option>
+								<option>May</option>
+								<option>June</option>
+								<option>July</option>
+								<option>August</option>
+								<option>September</option>
+								<option>October</option>
+								<option>November</option>
+								<option>December</option>
+							</select>
+						</div>
+						<div class="col">
+							<select name="endYear" id="endYear">
+								<option>year</option>
+								<option>1978</option>
+								<option>1979</option>
+								<option>1980</option>
+								<option>1981</option>
+								<option>1982</option>
+								<option>1983</option>
+								<option>1984</option>
+								<option>1985</option>
+								<option>1986</option>
+								<option>1987</option>
+								<option>1988</option>
+								<option>1989</option>
+								<option>1990</option>
+								<option>1991</option>
+								<option>1992</option>
+								<option>1993</option>
+								<option>1994</option>
+								<option>1995</option>
+								<option>1996</option>
+								<option>1997</option>
+								<option>1998</option>
+								<option>1999</option>
+								<option>2000</option>
+								<option>2001</option>
+								<option>2002</option>
+								<option>2003</option>
+								<option>2004</option>
+								<option>2005</option>
+								<option>2006</option>
+								<option>2007</option>
+								<option>2008</option>
+								<option>2009</option>
+								<option>2010</option>
+								<option>2011</option>
+								<option>2012</option>
+								<option>2013</option>
+								<option>2014</option>
+								<option>2015</option>
+								<option>2016</option>
+								<option>2017</option>
+								<option>2018</option>
+							</select>
+						</div>
+					</div>
+					<label>URL</label>
+					<input type="text" id="url" name="url" placeholder="Project URL if any">
+					<label>Description</label>
+					<textarea name="description" placeholder="Describe your project briefly"></textarea>
+				</form>
+				<section class="buttonGroup">
+					<button type="button" id="saveProject">SAVE</button>
+					<button type="button" id="cancelProject">CANCEL</button>
+				</section>
 			</section>
-			<form id="projectForm">
-				<label for="projectTitle">Project Title</label>
-				<input type="text" id="title" name="title" placeholder="Project Title">
-				<label>Duration</label>
-				<div class="form-row">
-					<div class="col">
 
-						<select name="startMonth" id="startMonth">
-							<option>January</option>
-							<option>February</option>
-							<option>March</option>
-							<option>April</option>
-							<option>May</option>
-							<option>June</option>
-							<option>July</option>
-							<option>August</option>
-							<option>September</option>
-							<option>October</option>
-							<option>November</option>
-							<option>December</option>
-						</select>
+			<section id="skillsMain" class="formatting">
+				<i class="fa fa-anchor" aria-hidden="true"></i>Skills
+				<i class="fa fa-plus-square-o" id="addSkills" aria-hidden="true">
+					<section>Add Skills</section>
+				</i>
+				<section id="skills">
+
+				</section>
+				<form id="skillsForm">
+					<label>Skills</label>
+					<textarea name="skillsArea" placeholder="Separate your skills using a comma ',' . for eg:HTML,Javascript'"></textarea>
+				</form>
+				<section class="buttonGroup">
+					<button type="button" id="saveSkills">SAVE</button>
+					<button type="button" id="cancelSkills">CANCEL</button>
+				</section>
+			</section>
+
+			<section id="extraCurr" class="formatting">
+				<i class="fa fa-bullseye" aria-hidden="true"></i>Extra-Curricular Activities
+				<i class="fa fa-plus-square-o" id="addActs" aria-hidden="true">
+					<section>Add Activities</section>
+				</i>
+				<section id="activities">
+
+				</section>
+				<form id="extraCurrForm">
+					<label>Activities</label>
+					<textarea id="actArea" name="actArea" placeholder="Separate your extra curricular activities using a comma ',' . for eg:singing,football'"></textarea>
+				</form>
+				<section class="buttonGroup">
+					<button type="button" id="saveActs">SAVE</button>
+					<button type="button" id="cancelActs">CANCEL</button>
+				</section>
+			</section>
+
+			<section id="personalInfo" class="formatting">
+				<i class="fa fa-info" aria-hidden="true"></i>Personal Information
+				<i class="fa fa-plus-square-o" id="addInfo" aria-hidden="true">
+					<section>Add Details</section>
+				</i>
+				<section id="pinfo"></section>
+				<form id="personalInfoForm">
+					<div class="form-row">
+						<div class="col">
+							<label>E-mail</label>
+							<input type="email" name="email">
+						</div>
+						<div class="col">
+							<label>Alternate Email</label>
+							<input type="email" name="emailAlt">
+						</div>
 					</div>
-					<div class="col">
-						<select name="startYear" id="startYear">
-							<option>year</option>
-							<option>1978</option>
-							<option>1979</option>
-							<option>1980</option>
-							<option>1981</option>
-							<option>1982</option>
-							<option>1983</option>
-							<option>1984</option>
-							<option>1985</option>
-							<option>1986</option>
-							<option>1987</option>
-							<option>1988</option>
-							<option>1989</option>
-							<option>1990</option>
-							<option>1991</option>
-							<option>1992</option>
-							<option>1993</option>
-							<option>1994</option>
-							<option>1995</option>
-							<option>1996</option>
-							<option>1997</option>
-							<option>1998</option>
-							<option>1999</option>
-							<option>2000</option>
-							<option>2001</option>
-							<option>2002</option>
-							<option>2003</option>
-							<option>2004</option>
-							<option>2005</option>
-							<option>2006</option>
-							<option>2007</option>
-							<option>2008</option>
-							<option>2009</option>
-							<option>2010</option>
-							<option>2011</option>
-							<option>2012</option>
-							<option>2013</option>
-							<option>2014</option>
-							<option>2015</option>
-							<option>2016</option>
-							<option>2017</option>
-							<option>2018</option>
-						</select>
+					<div class="form-row">
+						<div class="col">
+							<label>Contact</label>
+							<input type="text" name="contact">
+						</div>
+						<div class="col">
+							<label>Alternate Contact</label>
+							<input type="text" name="contactAlt">
+						</div>
 					</div>
-					-
-					<div class="col">
-						<select name="endMonth" id="endMonth">
-							<option>January</option>
-							<option>February</option>
-							<option>March</option>
-							<option>April</option>
-							<option>May</option>
-							<option>June</option>
-							<option>July</option>
-							<option>August</option>
-							<option>September</option>
-							<option>October</option>
-							<option>November</option>
-							<option>December</option>
-						</select>
+					<div class="form-row">
+						<div class="col">
+							<label>Gender</label>
+							<input type="text" name="gender" placeholder="eg:F">
+						</div>
+						<div class="col">
+							<label>Birth Date</label>
+							<input type="text" name="dob" placeholder="DD/MM/YYYY">
+						</div>
 					</div>
-					<div class="col">
-						<select name="endYear" id="endYear">
-							<option>year</option>
-							<option>1978</option>
-							<option>1979</option>
-							<option>1980</option>
-							<option>1981</option>
-							<option>1982</option>
-							<option>1983</option>
-							<option>1984</option>
-							<option>1985</option>
-							<option>1986</option>
-							<option>1987</option>
-							<option>1988</option>
-							<option>1989</option>
-							<option>1990</option>
-							<option>1991</option>
-							<option>1992</option>
-							<option>1993</option>
-							<option>1994</option>
-							<option>1995</option>
-							<option>1996</option>
-							<option>1997</option>
-							<option>1998</option>
-							<option>1999</option>
-							<option>2000</option>
-							<option>2001</option>
-							<option>2002</option>
-							<option>2003</option>
-							<option>2004</option>
-							<option>2005</option>
-							<option>2006</option>
-							<option>2007</option>
-							<option>2008</option>
-							<option>2009</option>
-							<option>2010</option>
-							<option>2011</option>
-							<option>2012</option>
-							<option>2013</option>
-							<option>2014</option>
-							<option>2015</option>
-							<option>2016</option>
-							<option>2017</option>
-							<option>2018</option>
-						</select>
+					<div class="form-row">
+						<div class="col">
+							<label>Address</label>
+							<input type="text" name="address">
+						</div>
+						<div class="col">
+							<label>Pin Code</label>
+							<input type="text" name="pin">
+						</div>
 					</div>
+					<label>Aadhar Number</label>
+					<input type="text" name="aadhar">
+				</form>
+				<section class="buttonGroup">
+					<button type="button" id="saveInfo">SAVE</button>
+					<button type="button" id="cancelInfo">CANCEL</button>
+				</section>
+			</section>
+
+
+		</div>
+
+		<div id="blogSection">
+
+			<section id="blogsMain">
+				<div class="blogTemplate whiteDivs" id="blogTemplate" style="display:none">
+					<button type="button" class="deletePost">Delete<i class="fa fa-trash" aria-hidden="true"></i></button>
+					<button type="button" class="editPost">Edit<i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+					
+					<span class="titleBlog"></span>
+					<br>
+					<span class="blogTime"></span><span style="color:grey">|</span><span class="blogLikes"></span>
+					<img class="imageBlog">
+					<p class="descBlog"></p>
+					<br>
+					<span class="likeSpan"><i class="fa fa-heart toggleLike"></i></span>
 				</div>
-				<label>URL</label>
-				<input type="text" id="url" name="url" placeholder="Project URL if any">
+			</section>
+			<button id="addBlog">Add New Blog</button>
+			<section id="addBlogSec">
+			<form name="blogger" class="blogger">
+				<label>Title</label>
+				<input type="text" placeholder="Enter the title" name="blogTitle">
+				<div class="blogImageUpload">
+					<input id="blogPicture" type="file" name="blogPicture" style="display: none">
+					<br>
+					<img id="blogImg" src="images/blogDefault.jpg" class="blogImage">
+					<br>
+					Click to upload image
+				</div>
 				<label>Description</label>
-				<textarea name="description" placeholder="Describe your project briefly"></textarea>
+				<textarea name="blogDesc" placeholder="Enter the description"></textarea>
+				<button name="saveBlog" id="saveBlog" type="button">Post</button>
+				<button name="cancelBlog" id="cancelBlog" type="button">Cancel</button>
 			</form>
-			<section class="buttonGroup">
-				<button type="button" id="saveProject">SAVE</button>
-				<button type="button" id="cancelProject">CANCEL</button>
-			</section>
 		</section>
+		</div>
 
-		<section id="skillsMain" class="formatting">
-			<i class="fa fa-anchor" aria-hidden="true"></i>Skills
-			<i class="fa fa-plus-square-o" id="addSkills" aria-hidden="true">
-				<section>Add Skills</section>
-			</i>
-			<section id="skills">
-
-			</section>
-			<form id="skillsForm">
-				<label>Skills</label>
-				<textarea name="skillsArea" placeholder="Separate your skills using a comma ',' . for eg:HTML,Javascript'"></textarea>
-			</form>
-			<section class="buttonGroup">
-				<button type="button" id="saveSkills">SAVE</button>
-				<button type="button" id="cancelSkills">CANCEL</button>
-			</section>
-		</section>
-
-		<section id="extraCurr" class="formatting">
-			<i class="fa fa-bullseye" aria-hidden="true"></i>Extra-Curricular Activities
-			<i class="fa fa-plus-square-o" id="addActs" aria-hidden="true">
-				<section>Add Activities</section>
-			</i>
-			<section id="activities">
-
-			</section>
-			<form id="extraCurrForm">
-				<label>Activities</label>
-				<textarea id="actArea" name="actArea" placeholder="Separate your extra curricular activities using a comma ',' . for eg:singing,football'"></textarea>
-			</form>
-			<section class="buttonGroup">
-				<button type="button" id="saveActs">SAVE</button>
-				<button type="button" id="cancelActs">CANCEL</button>
-			</section>
-		</section>
-
-<section id="personalInfo" class="formatting">
-		<i class="fa fa-info" aria-hidden="true"></i>Personal Information
-		<i class="fa fa-plus-square-o" id="addInfo" aria-hidden="true">
-			<section>Add Details</section>
-		</i>
-		<section id="pinfo"></section>
-		<form id="personalInfoForm">
-			<div class="form-row">
-				<div class="col">
-						<label>E-mail</label>
-						<input type="email" name="email">
-				</div>
-				<div class="col">
-					<label>Alternate Email</label>
-					<input type="email" name="emailAlt">
-				</div>
-			</div>
-			<div class="form-row">
-				<div class="col">
-					<label>Contact</label>
-	                <input type="text" name="contact">
-				</div>
-				<div class="col">
-					<label>Alternate Contact</label>
-					<input type="text" name="contactAlt">
-				</div>
-				</div>
-				<div class="form-row">
-					<div class="col">
-					<label>Gender</label>
-					<input type="text" name="gender" placeholder="eg:F">
-				</div>
-				<div class="col">
-					<label>Birth Date</label>
-					<input type="text" name="dob" placeholder="DD/MM/YYYY">
-				</div>
-			</div>
-			<div class="form-row">
-				<div class="col">
-					<label>Address</label>
-					<input type="text" name="address">
-				</div>
-				<div class="col">
-					<label>Pin Code</label>
-					<input type="text" name="pin">
-				</div>
-			</div>
-			<label>Aadhar Number</label>
-			<input type="text" name="aadhar">
-		</form>
-		<section class="buttonGroup">
-				<button type="button" id="saveInfo">SAVE</button>
-				<button type="button" id="cancelInfo">CANCEL</button>
-			</section>
-</section>
 
 
 	</div>
@@ -891,6 +924,7 @@
 	<!-- Scripts -->
 	<script src="assets/js/cvForm.js"></script>
 	<script src="assets/js/profile.js"></script>
+	<script src="assets/js/blog.js"></script>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	 crossorigin="anonymous"></script>

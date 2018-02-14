@@ -50,7 +50,7 @@ if(check.ans==false){
     
 
 
-
+console.log(check.ans);
 
     var toggleButton= document.querySelector('#toggleButton');
     if(check.ans)

@@ -5,9 +5,9 @@ body{
 .container i,i>section{
     font-size: 0.75em !important;
 }
-.container .fa{
+.container>.fa{
 margin: 2px;
-color:rgb(6, 1, 27)!important;
+color:rgb(6, 1, 27);
 }
 
 /*a{
@@ -25,11 +25,19 @@ body{
     min-width:290px;
     background-color:whitesmoke;
     display: grid;
-    grid-template-areas: "ph " "ep" "d" "a" "e " "s" "we" "pro" "ea" "pi";
+    grid-template-areas: "ph " "pb" ;
   /* grid-template-areas:"ph" "c";*/
     grid-template-columns: 1fr;
     grid-template-rows: max-content max-content max-content max-content max-content max-content max-content;
  
+}
+
+#profileSection{
+    display: grid;
+    grid-template-areas: "ep" "d" "a" "e " "s" "we" "pro" "ea" "pi";
+  /* grid-template-areas:"ph" "c";*/
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content max-content max-content max-content max-content max-content;
 }
 
 #personalInfo{
@@ -37,6 +45,7 @@ body{
     min-height:50px;
     font-size: 1.5em;
 }
+
 .container section{
     background-color: white;
     margin:5px;
@@ -84,8 +93,9 @@ i section{
 
 #editProfile{
     grid-area: ep;
-    margin:1px !important;
+    margin:1px auto !important;
     margin-top: 5px !important;
+    width: 50%;
     
 }
 
@@ -145,12 +155,16 @@ i section{
     display:block;
    
 }
-/*#profile_blog{
+#profile_blog{
    
     grid-area: pb;
     padding: 5px;
     margin:2px;
-}*/
+}
+#profile_blog button{
+    width: 48%;
+    margin: 0px auto;
+}
 #profileSnapshot{
     text-align: justify;
     padding: 5px;
@@ -172,6 +186,9 @@ i section{
 
 #done{
     grid-area: d;
+    width: 50%;
+    margin:1px auto !important;
+    margin-top: 5px !important;
     display:none;
 }
 
@@ -249,8 +266,12 @@ button{
             margin-top: 30px;
         }
         #editProfile{
-            width:75%;
+            width:50%;
             display: block;
+            margin:1px auto !important;
+        }
+        #done{
+            width:50%;
             margin:1px auto !important;
         }
     }
@@ -269,8 +290,12 @@ button{
             margin-top: 30px;
         }
         #editProfile{
-            width:75%;
+            width:70%;
             display: block;
+            margin:1px auto !important;
+        }
+        #done{
+            width:70%;
             margin:1px auto !important;
         }
         .form-row{
@@ -299,6 +324,10 @@ button{
         #editProfile{
             width:75%;
             display: block;
+            margin:1px auto !important;
+        }
+        #done{
+            width:75%;
             margin:1px auto !important;
         }
         .fa-pencil-square-o{
